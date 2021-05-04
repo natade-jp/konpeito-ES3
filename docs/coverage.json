@@ -1,0 +1,49 @@
+{
+  "coverage": "99.81%",
+  "expectCount": 549,
+  "actualCount": 548,
+  "files": {
+    "src/konpeitoWSH.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        36
+      ]
+    },
+    "src/math/core/Complex.js": {
+      "expectCount": 153,
+      "actualCount": 153,
+      "undocumentLines": []
+    },
+    "src/math/core/Matrix.js": {
+      "expectCount": 287,
+      "actualCount": 287,
+      "undocumentLines": []
+    },
+    "src/math/core/tools/LinearAlgebra.js": {
+      "expectCount": 24,
+      "actualCount": 24,
+      "undocumentLines": []
+    },
+    "src/math/core/tools/Probability.js": {
+      "expectCount": 43,
+      "actualCount": 43,
+      "undocumentLines": []
+    },
+    "src/math/core/tools/Random.js": {
+      "expectCount": 20,
+      "actualCount": 20,
+      "undocumentLines": []
+    },
+    "src/math/core/tools/Statistics.js": {
+      "expectCount": 18,
+      "actualCount": 18,
+      "undocumentLines": []
+    },
+    "src/math/tools/Polyfill.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    }
+  }
+}

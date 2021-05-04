@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Home | konpeito_wsh</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="The collection of javascirpt library such as numerical calculation."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="konpeito_wsh"><meta property="twitter:description" content="The collection of javascirpt library such as numerical calculation."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/natade-jp/konpeitoWSH.git"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-konpeitoWSH">konpeitoWSH</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#math-core">math/core</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/Complex.js~Complex.html">Complex</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KComplexInputData">KComplexInputData</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#math-core-tools">math/core/tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/LinearAlgebra.js~LinearAlgebra.html">LinearAlgebra</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/Probability.js~Probability.html">Probability</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/Random.js~Random.html">Random</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html">Statistics</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="konpeitowsh">konpeitoWSH</h1><p><a href="https://natade-jp.github.io/SenkoWSH/"><img src="https://natade-jp.github.io/konpeitoWSH/badge.svg" alt="ESDoc coverage badge"></a>
+<img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="MIT License"></p>
+<h2 id="&#x6982;&#x8981;">&#x6982;&#x8981;</h2><p>&#x9AD8;&#x6A5F;&#x80FD;&#x6570;&#x5024;&#x8A08;&#x7B97;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA; <a href="https://github.com/natade-jp/konpeito">konpeito</a> &#x3092;&#x30D9;&#x30FC;&#x30B9;&#x306B; <code>WSH JScript</code> &#x7528;&#x306B;&#x6A5F;&#x80FD;&#x3092;&#x7D5E;&#x3063;&#x3066;&#x5206;&#x96E2;&#x3057;&#x305F;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3067;&#x3059;&#x3002;</p>
+<ul>
+<li>Windows &#x4E0A;&#x3067;&#x52D5;&#x4F5C;&#x3059;&#x308B; WSH JScript &#x7528;&#x6C4E;&#x7528;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;</li>
+<li>Visual Studio Code &#x3067; JScript &#x3067;&#x306E;&#x958B;&#x767A;&#x3092;&#x76EE;&#x7684;&#x3068;&#x3059;&#x308B;</li>
+<li>&#x7D71;&#x8A08;&#x8A08;&#x7B97;&#x90E8;&#x5206;&#xFF08;<code>Complex</code>, <code>Matrix</code> &#x542B;&#x3080;&#xFF09;&#x304C;&#x884C;&#x3048;&#x308B;</li>
+</ul>
+<p><code>examples</code>&#x306E;<code>Example.wsf</code>&#x3092;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x307F;&#x308C;&#x3070;&#x3001;&#x96F0;&#x56F2;&#x6C17;&#x306F;&#x3064;&#x304B;&#x3081;&#x308B;&#x304B;&#x3068;&#x601D;&#x3044;&#x307E;&#x3059;&#x3002;
+&#x8A73;&#x3057;&#x3044;&#x95A2;&#x6570;&#x306E;&#x8AAC;&#x660E;&#x306F;&#x3001;<a href="https://natade-jp.github.io/SenkoWSH/">&#x30D8;&#x30EB;&#x30D7;&#x30D5;&#x30A1;&#x30A4;&#x30EB;</a>&#x3092;&#x53C2;&#x7167;&#x3002;</p>
+<h2 id="&#x6CE8;&#x610F;">&#x6CE8;&#x610F;</h2><ul>
+<li>&#x672C;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306F;&#x3001;<code>Polyfill</code>&#x7CFB;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x542B;&#x3093;&#x3067;&#x3044;&#x307E;&#x3059;&#x304C;&#x3001;&#x5168;&#x6A5F;&#x80FD;&#x306F;&#x542B;&#x3093;&#x3067;&#x304A;&#x308A;&#x307E;&#x305B;&#x3093;&#x306E;&#x3067;&#x6CE8;&#x610F;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+&#x5404;&#x5909;&#x6570;&#x3084;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306F;&#x672A;&#x5B9A;&#x7FA9;&#x306E;&#x5834;&#x5408;&#x306B;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x3063;&#x3066;&#x3044;&#x308B;&#x305F;&#x3081;&#x3001;&#x81EA;&#x5206;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x305F;&#x3044;&#x5834;&#x5408;&#x306F;&#x672C;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3088;&#x308A;&#x5148;&#x306B;<code>include</code>&#x3057;&#x3066;&#x4E0B;&#x3055;&#x3044;&#x3002;
+&#x8A73;&#x7D30;&#x306F;&#x3001;<code>/src/polyfill</code> &#x914D;&#x4E0B;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</li>
+</ul>
+<h2 id="&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x69CB;&#x6210;">&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x69CB;&#x6210;</h2><ul>
+<li><code>build</code> - <code>JScirpt</code> &#x3067;&#x52D5;&#x4F5C;&#x3059;&#x308B;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x53CA;&#x3073;&#x3001;Visual Studio Code &#x7528;&#x306E;&#x578B;&#x5B9A;&#x7FA9;&#x30D5;&#x30A1;&#x30A4;&#x30EB;</li>
+<li><code>src</code> - &#x30B3;&#x30F3;&#x30D1;&#x30A4;&#x30EB;&#x524D;&#x306E;&#x30BD;&#x30FC;&#x30B9;&#x30B3;&#x30FC;&#x30C9;&#x30D5;&#x30A9;&#x30EB;&#x30C0;</li>
+<li><code>docs</code> - &#x81EA;&#x52D5;&#x751F;&#x6210;&#x3057;&#x305F;&#x30D8;&#x30EB;&#x30D7;&#x30D5;&#x30A1;&#x30A4;&#x30EB;</li>
+<li><code>scripts</code> - <code>Node.js</code> &#x3067;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x30B9;&#x30AF;&#x30EA;&#x30D7;&#x30C8;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#xFF08;<code>package.json</code>&#x306E;<code>scripts</code>&#x3092;&#x53C2;&#x7167;&#xFF09;</li>
+</ul>
+<h2 id="&#x958B;&#x767A;&#x74B0;&#x5883;&#x69CB;&#x7BC9;">&#x958B;&#x767A;&#x74B0;&#x5883;&#x69CB;&#x7BC9;</h2><ol>
+<li>&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x5168;&#x4F53;&#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x3066;&#x3001;<code>package.json</code>&#x304C;&#x3042;&#x308B;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3092;&#x30AB;&#x30EC;&#x30F3;&#x30C8;&#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C8;&#x30EA;&#x3068;&#x3059;&#x308B;</li>
+<li><a href="https://nodejs.org/ja/">Node.js / npm</a> &#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x3066;<code>npm install</code>&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3002;</li>
+<li><a href="https://code.visualstudio.com/">Visual Studio Code</a> &#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</li>
+<li>VSCode&#x4E0A;&#x3067;&#x3001;&#x62E1;&#x5F35;&#x6A5F;&#x80FD;&#x306E; <a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ESLint</a> &#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</li>
+<li><code>examples</code>&#x306E;&#x4E2D;&#x8EAB;&#x3092;&#x3044;&#x3058;&#x3063;&#x3066;&#x4F5C;&#x308A;&#x305F;&#x3044;&#x30DE;&#x30AF;&#x30ED;&#x3092;&#x4F5C;&#x308B;&#x3002;</li>
+</ol>
+<p>&#x6B21;&#x306E;&#x3088;&#x3046;&#x306A;&#x64CD;&#x4F5C;&#x304C;&#x884C;&#x3048;&#x307E;&#x3059;&#x3002;</p>
+<ul>
+<li>&#x30D3;&#x30EB;&#x30C9;&#x306F;&#x3001;<code>npm run build</code></li>
+<li>&#x578B;&#x5B9A;&#x7FA9;&#x30D5;&#x30A1;&#x30A4;&#x30EB;(<code>d.ts</code>)&#x306E;&#x4F5C;&#x6210;&#x306F;&#x3001;<code>npm run dts</code></li>
+<li>&#x30D8;&#x30EB;&#x30D7;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x4F5C;&#x6210;&#x306F;&#x3001;<code>npm run doc</code></li>
+<li>&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x5B9F;&#x884C;&#x306F;&#x3001;<code>npm run start</code> (<code>JScript</code>&#x3067;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x304C;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x308B;)</li>
+</ul>
+<h2 id="konpeito-&#x306B;&#x3064;&#x3044;&#x3066;">konpeito &#x306B;&#x3064;&#x3044;&#x3066;</h2><p><a href="https://www.npmjs.com/package/konpeito">npm</a> &#x3067;&#x516C;&#x958B;&#x3057;&#x3066;&#x3044;&#x308B;&#x9AD8;&#x6A5F;&#x80FD;&#x6570;&#x5024;&#x8A08;&#x7B97;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA; <a href="https://github.com/natade-jp/konpeito">konpeito</a> &#x3067;&#x3059;&#x3002;&#x672C;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA; <code>konpeitoWSH</code> &#x306F;&#x3053;&#x3053;&#x304B;&#x3089; <code>WSH JScript</code> &#x7528;&#x306B;&#x6A5F;&#x80FD;&#x3092;&#x7D5E;&#x3063;&#x305F;&#x3082;&#x306E;&#x3068;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;&#x4E3B;&#x306B;&#x4EE5;&#x4E0B;&#x306E;&#x70B9;&#x3092;&#x5909;&#x66F4;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<ul>
+<li>ES3&#x3067;&#x672A;&#x5BFE;&#x5FDC;&#x306E; <code>get</code>, <code>set</code> &#x3092;&#x4F7F;&#x7528;&#x3057;&#x306A;&#x3044;</li>
+<li>&#x4E88;&#x7D04;&#x8A9E;&#x3092;&#x7528;&#x3044;&#x305F;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x540D;&#x3092;&#x3064;&#x3051;&#x306A;&#x3044;&#xFF08;&#x5206;&#x6563;&#x3092;&#x8868;&#x3059; <code>var</code> &#x306A;&#x3069;&#xFF09;</li>
+<li>&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x7528;&#x3044;&#x305F; <code>instanceof</code> &#x3092;&#x4F7F;&#x7528;&#x3057;&#x306A;&#x3044;</li>
+</ul>
+<h2 id="author">Author</h2><ul>
+<li><a href="https://github.com/natade-jp/">natade-jp</a></li>
+</ul>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
