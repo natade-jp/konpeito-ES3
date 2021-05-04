@@ -20,11 +20,13 @@
 const konpeitoWSH = {
 	
 	/**
+	 * Complex
  	 * @type {typeof typeComplex}
 	 */
 	Complex : typeComplex,
 	
 	/**
+	 * Matrix
  	 * @type {typeof typeMatrix}
 	 */
 	Matrix : typeMatrix
@@ -33,6 +35,10 @@ const konpeitoWSH = {
 
 export default konpeitoWSH;
 
+/**
+ * globalThis
+ * @private
+ */
 const global_var = ( function() { return this; } ).apply( null, [] );
 
 if(!("Complex" in global_var)) {

@@ -567,7 +567,7 @@
     "__docId__": 48,
     "kind": "file",
     "name": "src/konpeitoWSH.js",
-    "content": "﻿/**\n * The script is part of konpeito.\n * \n * AUTHOR:\n *  natade (http://twitter.com/natadea)\n * \n * LICENSE:\n *  The MIT license https://opensource.org/licenses/MIT\n */\n\n import Polyfill from \"./math/tools/Polyfill.js\";\n import typeComplex from \"./math/core/Complex.js\";\n import typeMatrix from \"./math/core/Matrix.js\";\n\n/**\n * konpeitoWSH\n */\n// @ts-ignore\n// eslint-disable-next-line no-undef\nconst konpeitoWSH = {\n\t\n\t/**\n \t * @type {typeof typeComplex}\n\t */\n\tComplex : typeComplex,\n\t\n\t/**\n \t * @type {typeof typeMatrix}\n\t */\n\tMatrix : typeMatrix\n\n};\n\nexport default konpeitoWSH;\n\nconst global_var = ( function() { return this; } ).apply( null, [] );\n\nif(!(\"Complex\" in global_var)) {\n\t// @ts-ignore\n\tComplex = typeComplex;\n}\n\nif(!(\"Matrix\" in global_var)) {\n\t// @ts-ignore\n\tMatrix = typeMatrix;\n}\n\n",
+    "content": "﻿/**\n * The script is part of konpeito.\n * \n * AUTHOR:\n *  natade (http://twitter.com/natadea)\n * \n * LICENSE:\n *  The MIT license https://opensource.org/licenses/MIT\n */\n\n import Polyfill from \"./math/tools/Polyfill.js\";\n import typeComplex from \"./math/core/Complex.js\";\n import typeMatrix from \"./math/core/Matrix.js\";\n\n/**\n * konpeitoWSH\n */\n// @ts-ignore\n// eslint-disable-next-line no-undef\nconst konpeitoWSH = {\n\t\n\t/**\n\t * Complex\n \t * @type {typeof typeComplex}\n\t */\n\tComplex : typeComplex,\n\t\n\t/**\n\t * Matrix\n \t * @type {typeof typeMatrix}\n\t */\n\tMatrix : typeMatrix\n\n};\n\nexport default konpeitoWSH;\n\n/**\n * globalThis\n * @private\n */\nconst global_var = ( function() { return this; } ).apply( null, [] );\n\nif(!(\"Complex\" in global_var)) {\n\t// @ts-ignore\n\tComplex = typeComplex;\n}\n\nif(!(\"Matrix\" in global_var)) {\n\t// @ts-ignore\n\tMatrix = typeMatrix;\n}\n\n",
     "static": true,
     "longname": "D:/JavaScript/konpeitoWSH/src/konpeitoWSH.js",
     "access": "public",
@@ -581,13 +581,12 @@
     "memberof": "src/konpeitoWSH.js",
     "static": true,
     "longname": "src/konpeitoWSH.js~global_var",
-    "access": "public",
+    "access": "private",
     "export": false,
     "importPath": "konpeito_wsh/src/konpeitoWSH.js",
     "importStyle": null,
-    "description": null,
-    "lineNumber": 36,
-    "undocument": true,
+    "description": "globalThis",
+    "lineNumber": 42,
     "type": {
       "types": [
         "*"
@@ -21300,7 +21299,7 @@
   },
   {
     "kind": "index",
-    "content": "# konpeitoWSH\n\n[![ESDoc coverage badge](https://natade-jp.github.io/konpeitoWSH/badge.svg)](https://natade-jp.github.io/SenkoWSH/)\n![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)\n\n## 概要\n\n高機能数値計算ライブラリ [konpeito](https://github.com/natade-jp/konpeito) をベースに `WSH JScript` 用に機能を絞って分離したライブラリです。\n\n- Windows 上で動作する WSH JScript 用汎用ライブラリ\n- Visual Studio Code で JScript での開発を目的とする\n- 統計計算部分（`Complex`, `Matrix` 含む）が行える\n\n`examples`の`Example.wsf`を実行してみれば、雰囲気はつかめるかと思います。\n詳しい関数の説明は、[ヘルプファイル](https://natade-jp.github.io/SenkoWSH/)を参照。\n\n## 注意\n\n- 本ライブラリは、`Polyfill`系のコードを含んでいますが、全機能は含んでおりませんので注意してください。\n各変数やメソッドは未定義の場合に設定されるようになっているため、自分のコードを使用したい場合は本ライブラリより先に`include`して下さい。\n詳細は、`/src/polyfill` 配下のファイルを確認してください。\n\n## フォルダ構成\n\n- `build` - `JScirpt` で動作するライブラリ及び、Visual Studio Code 用の型定義ファイル\n- `src` - コンパイル前のソースコードフォルダ\n- `docs` - 自動生成したヘルプファイル\n- `scripts` - `Node.js` で実行するスクリプトファイル（`package.json`の`scripts`を参照）\n\n## 開発環境構築\n\n1. プロジェクトフォルダ全体をダウンロードして、`package.json`があるディレクトリをカレントディレクトリとする\n2. [Node.js / npm](https://nodejs.org/ja/) をインストールして`npm install`を実行する。\n3. [Visual Studio Code](https://code.visualstudio.com/) をインストール\n4. VSCode上で、拡張機能の [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) をインストール\n5. `examples`の中身をいじって作りたいマクロを作る。\n\n次のような操作が行えます。\n\n- ビルドは、`npm run build`\n- 型定義ファイル(`d.ts`)の作成は、`npm run dts`\n- ヘルプファイルの作成は、`npm run doc`\n- サンプルファイルの実行は、`npm run start` (`JScript`でサンプルファイルが実行される)\n\n## konpeito について\n\n[npm](https://www.npmjs.com/package/konpeito) で公開している高機能数値計算ライブラリ [konpeito](https://github.com/natade-jp/konpeito) です。本ライブラリ `konpeitoWSH` はここから `WSH JScript` 用に機能を絞ったものとなります。主に以下の点を変更しています。\n\n- ES3で未対応の `get`, `set` を使用しない\n- 予約語を用いたメソッド名をつけない（分散を表す `var` など）\n- 作成したクラスを用いた `instanceof` を使用しない\n\n## Author\n\n- [natade-jp](https://github.com/natade-jp/)\n",
+    "content": "# konpeitoWSH\n\n[![ESDoc coverage badge](https://natade-jp.github.io/konpeitoWSH/badge.svg)](https://natade-jp.github.io/konpeitoWSH/)\n![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)\n\n## 概要\n\n高機能数値計算ライブラリ [konpeito](https://github.com/natade-jp/konpeito) をベースに `WSH JScript` 用に機能を絞って分離したライブラリです。\n\n- Windows 上で動作する WSH JScript 用汎用ライブラリ\n- Visual Studio Code で JScript での開発を目的とする\n- 統計計算部分（`Complex`, `Matrix` 含む）が行える\n\n`examples`の`Example.wsf`を実行してみれば、雰囲気はつかめるかと思います。\n詳しい関数の説明は、[ヘルプファイル](https://natade-jp.github.io/SenkoWSH/)を参照。\n\n## 注意\n\n- 本ライブラリは、`Polyfill`系のコードを含んでいますが、全機能は含んでおりませんので注意してください。\n各変数やメソッドは未定義の場合に設定されるようになっているため、自分のコードを使用したい場合は本ライブラリより先に`include`して下さい。\n詳細は、`/src/polyfill` 配下のファイルを確認してください。\n\n## フォルダ構成\n\n- `build` - `JScirpt` で動作するライブラリ及び、Visual Studio Code 用の型定義ファイル\n- `src` - コンパイル前のソースコードフォルダ\n- `docs` - 自動生成したヘルプファイル\n- `scripts` - `Node.js` で実行するスクリプトファイル（`package.json`の`scripts`を参照）\n\n## 開発環境構築\n\n1. プロジェクトフォルダ全体をダウンロードして、`package.json`があるディレクトリをカレントディレクトリとする\n2. [Node.js / npm](https://nodejs.org/ja/) をインストールして`npm install`を実行する。\n3. [Visual Studio Code](https://code.visualstudio.com/) をインストール\n4. VSCode上で、拡張機能の [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) をインストール\n5. `examples`の中身をいじって作りたいマクロを作る。\n\n次のような操作が行えます。\n\n- ビルドは、`npm run build`\n- 型定義ファイル(`d.ts`)の作成は、`npm run dts`\n- ヘルプファイルの作成は、`npm run doc`\n- サンプルファイルの実行は、`npm run start` (`JScript`でサンプルファイルが実行される)\n\n## konpeito について\n\n[npm](https://www.npmjs.com/package/konpeito) で公開している高機能数値計算ライブラリ [konpeito](https://github.com/natade-jp/konpeito) です。本ライブラリ `konpeitoWSH` はここから `WSH JScript` 用に機能を絞ったものとなります。主に以下の点を変更しています。\n\n- ES3で未対応の `get`, `set` を使用しない\n- 予約語を用いたメソッド名をつけない（分散を表す `var` など）\n- 作成したクラスを用いた `instanceof` を使用しない\n\n## Author\n\n- [natade-jp](https://github.com/natade-jp/)\n",
     "longname": "D:\\JavaScript\\konpeitoWSH\\README.md",
     "name": "./README.md",
     "static": true,

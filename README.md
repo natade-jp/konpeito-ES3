@@ -1,6 +1,6 @@
 # konpeitoWSH
 
-[![ESDoc coverage badge](https://natade-jp.github.io/konpeitoWSH/badge.svg)](https://natade-jp.github.io/SenkoWSH/)
+[![ESDoc coverage badge](https://natade-jp.github.io/konpeitoWSH/badge.svg)](https://natade-jp.github.io/konpeitoWSH/)
 ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)
 
 ## 概要
