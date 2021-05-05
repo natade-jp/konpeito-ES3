@@ -1,5 +1,5 @@
 ﻿/**
- * The script is part of konpeito.
+ * The script is part of konpeito-ES3.
  * 
  * AUTHOR:
  *  natade (http://twitter.com/natadea)
@@ -13,11 +13,11 @@
  import typeMatrix from "./math/core/Matrix.js";
 
 /**
- * konpeitoWSH
+ * konpeito-ES3
  */
 // @ts-ignore
 // eslint-disable-next-line no-undef
-const konpeitoWSH = {
+const konpeitoES3 = {
 	
 	/**
 	 * Complex
@@ -33,7 +33,7 @@ const konpeitoWSH = {
 
 };
 
-export default konpeitoWSH;
+export default konpeitoES3;
 
 /**
  * globalThis

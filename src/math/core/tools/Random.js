@@ -1,5 +1,5 @@
 /**
- * The script is part of konpeitoWSH.
+ * The script is part of konpeito-ES3.
  * 
  * AUTHOR:
  *  natade (http://twitter.com/natadea)

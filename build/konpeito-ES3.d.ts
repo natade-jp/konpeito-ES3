@@ -1,7 +1,7 @@
 ﻿/**
- * konpeitoWSH
+ * konpeito-ES3
  */
-declare const konpeitoWSH: any;
+declare const konpeitoES3: any;
 
 /**
  * Complex type argument.

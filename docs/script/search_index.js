@@ -1,44 +1,44 @@
 window.esdocSearchIndex = [
   [
-    "konpeito_wsh/src/math/core/complex.js~complex",
+    "konpeito_es3/src/math/core/complex.js~complex",
     "class/src/math/core/Complex.js~Complex.html",
-    "<span>Complex</span> <span class=\"search-result-import-path\">konpeito_wsh/src/math/core/Complex.js</span>",
+    "<span>Complex</span> <span class=\"search-result-import-path\">konpeito_es3/src/math/core/Complex.js</span>",
     "class"
   ],
   [
-    "konpeito_wsh/src/math/core/tools/linearalgebra.js~linearalgebra",
+    "konpeito_es3/src/math/core/tools/linearalgebra.js~linearalgebra",
     "class/src/math/core/tools/LinearAlgebra.js~LinearAlgebra.html",
-    "<span>LinearAlgebra</span> <span class=\"search-result-import-path\">konpeito_wsh/src/math/core/tools/LinearAlgebra.js</span>",
+    "<span>LinearAlgebra</span> <span class=\"search-result-import-path\">konpeito_es3/src/math/core/tools/LinearAlgebra.js</span>",
     "class"
   ],
   [
-    "konpeito_wsh/src/math/core/matrix.js~matrix",
+    "konpeito_es3/src/math/core/matrix.js~matrix",
     "class/src/math/core/Matrix.js~Matrix.html",
-    "<span>Matrix</span> <span class=\"search-result-import-path\">konpeito_wsh/src/math/core/Matrix.js</span>",
+    "<span>Matrix</span> <span class=\"search-result-import-path\">konpeito_es3/src/math/core/Matrix.js</span>",
     "class"
   ],
   [
-    "konpeito_wsh/src/math/core/tools/probability.js~probability",
+    "konpeito_es3/src/math/core/tools/probability.js~probability",
     "class/src/math/core/tools/Probability.js~Probability.html",
-    "<span>Probability</span> <span class=\"search-result-import-path\">konpeito_wsh/src/math/core/tools/Probability.js</span>",
+    "<span>Probability</span> <span class=\"search-result-import-path\">konpeito_es3/src/math/core/tools/Probability.js</span>",
     "class"
   ],
   [
-    "konpeito_wsh/src/math/core/tools/random.js~random",
+    "konpeito_es3/src/math/core/tools/random.js~random",
     "class/src/math/core/tools/Random.js~Random.html",
-    "<span>Random</span> <span class=\"search-result-import-path\">konpeito_wsh/src/math/core/tools/Random.js</span>",
+    "<span>Random</span> <span class=\"search-result-import-path\">konpeito_es3/src/math/core/tools/Random.js</span>",
     "class"
   ],
   [
-    "konpeito_wsh/src/math/core/tools/statistics.js~statistics",
+    "konpeito_es3/src/math/core/tools/statistics.js~statistics",
     "class/src/math/core/tools/Statistics.js~Statistics.html",
-    "<span>Statistics</span> <span class=\"search-result-import-path\">konpeito_wsh/src/math/core/tools/Statistics.js</span>",
+    "<span>Statistics</span> <span class=\"search-result-import-path\">konpeito_es3/src/math/core/tools/Statistics.js</span>",
     "class"
   ],
   [
-    "konpeito_wsh/src/konpeitowsh.js~konpeitowsh",
-    "variable/index.html#static-variable-konpeitoWSH",
-    "<span>konpeitoWSH</span> <span class=\"search-result-import-path\">konpeito_wsh/src/konpeitoWSH.js</span>",
+    "konpeito_es3/src/konpeito-es3.js~konpeitoes3",
+    "variable/index.html#static-variable-konpeitoES3",
+    "<span>konpeitoES3</span> <span class=\"search-result-import-path\">konpeito_es3/src/konpeito-ES3.js</span>",
     "variable"
   ],
   [
@@ -324,9 +324,9 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
-    "src/konpeitowsh.js",
-    "file/src/konpeitoWSH.js.html",
-    "src/konpeitoWSH.js",
+    "src/konpeito-es3.js",
+    "file/src/konpeito-ES3.js.html",
+    "src/konpeito-ES3.js",
     "file"
   ],
   [

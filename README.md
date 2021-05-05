@@ -1,11 +1,11 @@
-# konpeitoWSH
+# konpeito-ES3
 
-[![ESDoc coverage badge](https://natade-jp.github.io/konpeitoWSH/badge.svg)](https://natade-jp.github.io/konpeitoWSH/)
+[![ESDoc coverage badge](https://natade-jp.github.io/konpeito-ES3/badge.svg)](https://natade-jp.github.io/konpeito-ES3/)
 ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)
 
 ## 概要
 
-高機能数値計算ライブラリ [konpeito](https://github.com/natade-jp/konpeito) をベースに `WSH JScript` 用に機能を絞って分離したライブラリです。
+高機能数値計算ライブラリ [konpeito](https://github.com/natade-jp/konpeito) をベースに `WSH JScript` でも動作するように機能を絞って `ES3` で動作するようにしたライブラリです。
 
 - Windows 上で動作する WSH JScript 用汎用ライブラリ
 - Visual Studio Code で JScript での開発を目的とする
@@ -44,7 +44,7 @@
 
 ## konpeito について
 
-[npm](https://www.npmjs.com/package/konpeito) で公開している高機能数値計算ライブラリ [konpeito](https://github.com/natade-jp/konpeito) です。本ライブラリ `konpeitoWSH` はここから `WSH JScript` 用に機能を絞ったものとなります。主に以下の点を変更しています。
+[npm](https://www.npmjs.com/package/konpeito) で公開している高機能数値計算ライブラリ [konpeito](https://github.com/natade-jp/konpeito) です。本ライブラリ `konpeito-ES3` はここから `WSH JScript` 用に機能を絞ったものとなります。主に以下の点を変更しています。
 
 - ES3で未対応の `get`, `set` を使用しない
 - 予約語を用いたメソッド名をつけない（分散を表す `var` など）

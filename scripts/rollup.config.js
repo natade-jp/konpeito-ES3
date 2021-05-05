@@ -45,6 +45,6 @@ const data = [];
 
 const is_uglify = true;
 
-data.push(createData("konpeitoWSH", "./src/konpeitoWSH.js", "./tmp/konpeitoWSH.min.js", false, is_uglify));
+data.push(createData("konpeito-ES3", "./src/konpeito-ES3.js", "./tmp/konpeito-ES3.min.js", false, is_uglify));
 
 export default data;

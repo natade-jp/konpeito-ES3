@@ -3,7 +3,7 @@
   "expectCount": 549,
   "actualCount": 549,
   "files": {
-    "src/konpeitoWSH.js": {
+    "src/konpeito-ES3.js": {
       "expectCount": 2,
       "actualCount": 2,
       "undocumentLines": []

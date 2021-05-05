@@ -1,14 +1,14 @@
 {
-	"name": "konpeito_wsh",
+	"name": "konpeito_es3",
 	"version": "1.0.0",
 	"description": "The collection of javascirpt library such as numerical calculation.",
 	"author": "natade-jp <natade3@gmail.com> (https://github.com/natade-jp)",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/natade-jp/konpeitoWSH.git"
+		"url": "https://github.com/natade-jp/konpeito-ES3.git"
 	},
 	"license": "MIT",
-	"main": "./build/konpeitoWSH.js",
+	"main": "./build/konpeito-ES3.js",
 	"keywords": [
 		"wsh",
 		"math",
@@ -26,7 +26,8 @@
 	"scripts": {
 		"build": "node ./scripts/package.build.js",
 		"dts": "node ./scripts/package.dts.js",
-		"doc": "node ./scripts/package.doc.js"
+		"doc": "node ./scripts/package.doc.js",
+		"start": "node ./scripts/execExample.js"
 	},
 	"devDependencies": {
 		"@types/windows-script-host": "^5.8.3",

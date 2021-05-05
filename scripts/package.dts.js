@@ -64,7 +64,7 @@ let dts_text = File.loadTextFile("./tmp/types.d.ts");
 }
 
 // 保存
-File.saveTextFileWithBOM("./build/konpeitoWSH.d.ts", dts_text);
+File.saveTextFileWithBOM("./build/konpeito-ES3.d.ts", dts_text);
 
 // 作成用ディレクトリを削除
 File.deleteDirectory("./tmp");

@@ -11,7 +11,7 @@ const getHeader = function() {
 	const build_date = new Date();
 	const header = [];
 	header.push("/*!");
-	header.push(" * konpeitoWSH.js (version " + package_info["version"] + ", " + build_date.getFullYear() + "/" + (build_date.getMonth() + 1) + "/" + build_date.getDay() + ")");
+	header.push(" * konpeito-ES3.js (version " + package_info["version"] + ", " + build_date.getFullYear() + "/" + (build_date.getMonth() + 1) + "/" + build_date.getDay() + ")");
 	header.push(" * https://github.com/natade-jp/SenkoWSH");
 	header.push(" * Copyright 2013-" + build_date.getFullYear() + " natade < https://github.com/natade-jp >");
 	header.push(" *");
@@ -60,7 +60,7 @@ const output = getHeader() + text_array.join("") + getFooter();
 const output_data = MojiJS.encode(output.replace(/\n/g, "\r\n"), "UTF16-LE");
 
 // 作成
-File.saveBinaryFile("./build/konpeitoWSH.js", output_data);
+File.saveBinaryFile("./build/konpeito-ES3.js", output_data);
 
 // tmpフォルダを削除
 File.deleteDirectory("./tmp");
