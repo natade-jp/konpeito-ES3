@@ -12,7 +12,7 @@
 - 統計計算部分（`Complex`, `Matrix` 含む）が行える
 
 `examples`の`Example.wsf`を実行してみれば、雰囲気はつかめるかと思います。
-詳しい関数の説明は、[ヘルプファイル](https://natade-jp.github.io/SenkoWSH/)を参照。
+詳しい関数の説明は、[ヘルプファイル](https://natade-jp.github.io/konpeito-ES3/)を参照。
 
 ## 注意
 
@@ -44,7 +44,7 @@
 
 ## konpeito について
 
-[npm](https://www.npmjs.com/package/konpeito) で公開している高機能数値計算ライブラリ [konpeito](https://github.com/natade-jp/konpeito) です。本ライブラリ `konpeito-ES3` はここから `WSH JScript` 用に機能を絞ったものとなります。主に以下の点を変更しています。
+[npm](https://www.npmjs.com/package/konpeito) で公開している高機能数値計算ライブラリ [konpeito](https://github.com/natade-jp/konpeito) です。本ライブラリ `konpeito-ES3` はここから機能を絞り、 `WSH JScript` でも動作するように `ES3` で動作するよう修正したものです。主に以下の点を変更しています。
 
 - ES3で未対応の `get`, `set` を使用しない
 - 予約語を用いたメソッド名をつけない（分散を表す `var` など）
