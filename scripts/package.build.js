@@ -12,7 +12,7 @@ const getHeader = function() {
 	const header = [];
 	header.push("/*!");
 	header.push(" * konpeito-ES3.js (version " + package_info["version"] + ", " + build_date.getFullYear() + "/" + (build_date.getMonth() + 1) + "/" + build_date.getDay() + ")");
-	header.push(" * https://github.com/natade-jp/SenkoWSH");
+	header.push(" * https://github.com/natade-jp/konpeito-ES3");
 	header.push(" * Copyright 2013-" + build_date.getFullYear() + " natade < https://github.com/natade-jp >");
 	header.push(" *");
 	header.push(" * The MIT license.");
@@ -57,7 +57,7 @@ for(let i = 0; i < list.length; i++) {
 const output = getHeader() + text_array.join("") + getFooter();
 
 // ファイルを作成する
-const output_data = MojiJS.encode(output.replace(/\n/g, "\r\n"), "UTF16-LE");
+const output_data = MojiJS.encode(output.replace(/\n/g, "\r\n"), "Shift_JIS");
 
 // 作成
 File.saveBinaryFile("./build/konpeito-ES3.js", output_data);
