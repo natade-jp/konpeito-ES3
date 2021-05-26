@@ -979,7 +979,7 @@ export default class Complex {
 			return new Complex(Math.log(this._re));
 		}
 		// 負の値が入っているか、もともと複素数が入っている場合は、複素対数関数
-		return new Complex([Math.log(this.norm()), this.arg]);
+		return new Complex([Math.log(this.norm()), this.arg()]);
 	}
 
 	/**
@@ -1096,7 +1096,7 @@ export default class Complex {
 	 */
 	atan2(number) {
 		if(arguments.length === 0) {
-			return new Complex(this.arg);
+			return new Complex(this.arg());
 		}
 		// y.atan2(x) とする。
 		const y = this;

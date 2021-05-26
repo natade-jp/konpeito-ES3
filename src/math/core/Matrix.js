@@ -1427,7 +1427,7 @@ export default class Matrix {
 				else {
 					return Complex.ZERO;
 				}
-			}, this.length);
+			}, this.length());
 		}
 		else {
 			// 列ベクトルを作成
@@ -2241,7 +2241,7 @@ export default class Matrix {
 			}
 			let x, y;
 			x = this.clone();
-			y = Matrix.eye(this.length);
+			y = Matrix.eye(this.length());
 			while(n !== 0) {
 				if((n & 1) !== 0) {
 					y = y.mul(x);

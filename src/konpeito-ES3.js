@@ -8,9 +8,13 @@
  *  The MIT license https://opensource.org/licenses/MIT
  */
 
- import Polyfill from "./math/tools/Polyfill.js";
- import typeComplex from "./math/core/Complex.js";
- import typeMatrix from "./math/core/Matrix.js";
+import Polyfill from "./math/tools/Polyfill.js";
+import typeComplex from "./math/core/Complex.js";
+import typeMatrix from "./math/core/Matrix.js";
+import typeProbability from "./math/core/tools/Probability.js";
+import typeStatistics from "./math/core/tools/Statistics.js";
+import typeLinearAlgebra from "./math/core/tools/LinearAlgebra.js";
+import typeDataAnalysis from "./math/tools/DataAnalysis.js";
 
 /**
  * konpeito-ES3
@@ -29,7 +33,31 @@ const konpeitoES3 = {
 	 * Matrix
  	 * @type {typeof typeMatrix}
 	 */
-	Matrix : typeMatrix
+	Matrix : typeMatrix,
+
+	/**
+	 * Probability
+ 	 * @type {typeProbability}
+	 */
+	Probability : typeProbability,
+
+	/**
+	 * Statistics
+ 	 * @type {typeStatistics}
+	 */
+	Statistics : typeStatistics,
+
+	/**
+	 * LinearAlgebra
+ 	 * @type {typeLinearAlgebra}
+	 */
+	LinearAlgebra : typeLinearAlgebra,
+
+	/**
+	 * DataAnalysis
+ 	 * @type {typeDataAnalysis}
+	 */
+	DataAnalysis : typeDataAnalysis
 
 };
 
@@ -50,4 +78,25 @@ if(!("Matrix" in global_var)) {
 	// @ts-ignore
 	Matrix = typeMatrix;
 }
+
+if(!("Probability" in global_var)) {
+	// @ts-ignore
+	Probability = typeProbability;
+}
+
+if(!("Statistics" in global_var)) {
+	// @ts-ignore
+	Statistics = typeStatistics;
+}
+
+if(!("LinearAlgebra" in global_var)) {
+	// @ts-ignore
+	LinearAlgebra = typeLinearAlgebra;
+}
+
+if(!("DataAnalysis" in global_var)) {
+	// @ts-ignore
+	DataAnalysis = typeDataAnalysis;
+}
+
 

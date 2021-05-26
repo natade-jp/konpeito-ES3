@@ -3401,3 +3401,188 @@ declare class Statistics {
     static sort(x: any, order?: string, type?: KStatisticsSettings): Matrix;
 }
 
+/**
+ * Settings for multiple regression analysis
+ * @typedef {Object} KMultipleRegressionAnalysisSettings
+ * @property {KMatrixInputData} samples explanatory variable. (Each column is a parameters and each row is a samples.)
+ * @property {KMatrixInputData} target response variable. / actual values. (column vector)
+ * @property {boolean} [is_standardised=false] Use standardized partial regression coefficients.
+ */
+declare type KMultipleRegressionAnalysisSettings = {
+    is_standardised?: boolean;
+};
+
+/**
+ * Vector state
+ * @typedef {Object} KMultipleRegressionAnalysisVectorState
+ * @property {number} df degree of freedom
+ * @property {number} SS sum of squares
+ * @property {number} MS unbiased_variance
+ */
+declare type KMultipleRegressionAnalysisVectorState = {
+    df: number;
+    SS: number;
+    MS: number;
+};
+
+/**
+ * Analysis of variance. ANOVA.
+ * @typedef {Object} KMultipleRegressionAnalysisAnova
+ * @property {KMultipleRegressionAnalysisVectorState} regression regression.
+ * @property {KMultipleRegressionAnalysisVectorState} residual residual error.
+ * @property {KMultipleRegressionAnalysisVectorState} total total.
+ * @property {number} F F value. Dispersion ratio (F0)
+ * @property {number} significance_F Significance F. Test with F distribution with q, n-q-1 degrees of freedom.(Probability of error.)
+ */
+declare type KMultipleRegressionAnalysisAnova = {
+    regression: KMultipleRegressionAnalysisVectorState;
+    residual: KMultipleRegressionAnalysisVectorState;
+    total: KMultipleRegressionAnalysisVectorState;
+    F: number;
+    significance_F: number;
+};
+
+/**
+ * Regression table data.
+ * @typedef {Object} KMultipleRegressionAnalysisPartialRegressionData
+ * @property {number} coefficient Coefficient.
+ * @property {number} standard_error Standard error.
+ * @property {number} t_stat t-statistic.
+ * @property {number} p_value P-value. Risk factor.
+ * @property {number} lower_95 Lower limit of a 95% confidence interval.
+ * @property {number} upper_95 Upper limit of a 95% confidence interval.
+ */
+declare type KMultipleRegressionAnalysisPartialRegressionData = {
+    coefficient: number;
+    standard_error: number;
+    t_stat: number;
+    p_value: number;
+    lower_95: number;
+    upper_95: number;
+};
+
+/**
+ * Regression table.
+ * @typedef {Object} KMultipleRegressionAnalysisPartialRegression
+ * @property {KMultipleRegressionAnalysisPartialRegressionData} intercept Intercept.
+ * @property {KMultipleRegressionAnalysisPartialRegressionData[]} parameters Parameters.
+ */
+declare type KMultipleRegressionAnalysisPartialRegression = {
+    intercept: KMultipleRegressionAnalysisPartialRegressionData;
+    parameters: KMultipleRegressionAnalysisPartialRegressionData[];
+};
+
+/**
+ * Output for multiple regression analysis
+ * @typedef {Object} KMultipleRegressionAnalysisOutput
+ * @property {number} q number of explanatory variables.
+ * @property {number} n number of samples.
+ * @property {number[][]} predicted_values predicted values. (column vector)
+ * @property {number} sY Variance of predicted values of target variable.
+ * @property {number} sy Variance of measured values of target variable.
+ * @property {number} multiple_R Multiple R. Multiple correlation coefficient.
+ * @property {number} R_square R Square. Coefficient of determination.
+ * @property {number} adjusted_R_square Adjusted R Square. Adjusted coefficient of determination.
+ * @property {KMultipleRegressionAnalysisAnova} ANOVA analysis of variance.
+ * @property {number} Ve Unbiased variance of residuals. (Ve)
+ * @property {number} standard_error Standard error. (SE)
+ * @property {number} AIC Akaike's Information Criterion. (AIC)
+ * @property {KMultipleRegressionAnalysisPartialRegression} regression_table Regression table.
+ */
+declare type KMultipleRegressionAnalysisOutput = {
+    q: number;
+    n: number;
+    predicted_values: number[][];
+    sY: number;
+    sy: number;
+    multiple_R: number;
+    R_square: number;
+    adjusted_R_square: number;
+    ANOVA: KMultipleRegressionAnalysisAnova;
+    Ve: number;
+    standard_error: number;
+    AIC: number;
+    regression_table: KMultipleRegressionAnalysisPartialRegression;
+};
+
+/**
+ * Multiple regression analysis.
+ */
+declare class MultipleRegressionAnalysis {
+    /**
+     * Multiple regression analysis
+     * @param {KMultipleRegressionAnalysisSettings} settings - input data
+     * @returns {KMultipleRegressionAnalysisOutput} analyzed data
+     */
+    static runMultipleRegressionAnalysis(settings: KMultipleRegressionAnalysisSettings): KMultipleRegressionAnalysisOutput;
+}
+
+/**
+ * Settings for principal component analysis.
+ * @typedef {Object} KPrincipalComponentAnalysisSettings
+ * @property {KMatrixInputData} samples explanatory variable. (Each column is a parameters and each row is a samples.)
+ * @property {boolean} [is_unbiased=true] Use unbiased variance when calculating variance from samples.
+ * @property {boolean} [is_standardised=false] Use standardized explanatory variables. Use the correlation matrix instead of the covariance matrix.
+ */
+declare type KPrincipalComponentAnalysisSettings = {
+    is_unbiased?: boolean;
+    is_standardised?: boolean;
+};
+
+/**
+ * @typedef {Object} KPrincipalComponent
+ * @property {number} eigen_value Contribution. Eigen value. Variance of principal components.
+ * @property {number[]} factor_loading Factor loading. Eigen vector. Principal component coefficients.
+ * @property {number[]} factor_loading_contribution_rate Factor loading contribution rate.
+ * @property {number} cumulative_contribution_ratio Cumulative contribution ratio.
+ * @property {number} contribution_ratio Contribution ratio.
+ * @property {number[]} score Principal component score.
+ */
+declare type KPrincipalComponent = {
+    eigen_value: number;
+    factor_loading: number[];
+    factor_loading_contribution_rate: number[];
+    cumulative_contribution_ratio: number;
+    contribution_ratio: number;
+    score: number[];
+};
+
+/**
+ * Output for principal component analysis.
+ * @typedef {Object} KPrincipalComponentAnalysisOutput
+ * @property {KPrincipalComponent[]} principal_component Principal component.
+ */
+declare type KPrincipalComponentAnalysisOutput = {
+    principal_component: KPrincipalComponent[];
+};
+
+/**
+ * Principal component analysis.
+ */
+declare class PrincipalComponentAnalysis {
+    /**
+     * Principal component analysis.
+     * @param {KPrincipalComponentAnalysisSettings} settings - input data
+     * @returns {KPrincipalComponentAnalysisOutput} analyzed data
+     */
+    static runPrincipalComponentAnalysis(settings: KPrincipalComponentAnalysisSettings): KPrincipalComponentAnalysisOutput;
+}
+
+/**
+ * Tools for analyzing data.
+ */
+declare class DataAnalysis {
+    /**
+     * Principal component analysis.
+     * @param {KPrincipalComponentAnalysisSettings} settings - input data
+     * @returns {KPrincipalComponentAnalysisOutput} analyzed data
+     */
+    static runPrincipalComponentAnalysis(settings: any): KPrincipalComponentAnalysisOutput;
+    /**
+     * Multiple regression analysis
+     * @param {KMultipleRegressionAnalysisSettings} settings - input data
+     * @returns {KMultipleRegressionAnalysisOutput} analyzed data
+     */
+    static runMultipleRegressionAnalysis(settings: any): KMultipleRegressionAnalysisOutput;
+}
+

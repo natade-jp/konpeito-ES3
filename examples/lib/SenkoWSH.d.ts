@@ -174,18 +174,21 @@ declare class Japanese {
 declare class StringComparator {
     /**
      * 2つの文字列を比較する
-     * @param {String} a - 比較元
-     * @param {String} b - 比較先
+     *
+     * @param {any} a - 比較元
+     * @param {any} b - 比較先
      * @returns {number} Compare結果
      */
-    static DEFAULT(a: string, b: string): number;
+    static DEFAULT(a: any, b: any): number;
     /**
      * 2つの文字列を自然順に比較を行う（自然順ソート（Natural Sort）用）
-     * @param {String} a - 比較元
-     * @param {String} b - 比較先
+     * - 入力引数は文字列化して比較します
+     *
+     * @param {any} a - 比較元
+     * @param {any} b - 比較先
      * @returns {number} Compare結果
      */
-    static NATURAL(a: string, b: string): number;
+    static NATURAL(a: any, b: any): number;
 }
 
 /**
@@ -241,7 +244,7 @@ declare class CSV {
  * @typedef {Object} PopupOption
  * @property {number} [secondstowait=0] タイムアウト時間(`0`で無効)
  * @property {string} [caption=""] タイトルバー
- * @property {number} [type=0] `Dialog.MB_YESNOCANCEL | Dialog.MB_DEFBUTTON3` など
+ * @property {number} [type=0] `Dialog.POPUP_OPTION_TYPE` を組み合わせて使用する
  */
 declare type PopupOption = {
     secondstowait?: number;
@@ -296,9 +299,12 @@ declare type SaveAsOption = {
 declare class Dialog {
     /**
      * ダイアログを表示する
+     * - 引数の `PopupOption` の `type` には `Dialog.POPUP_OPTION_TYPE` を組み合わせて使用できます
+     * - 戻り値は `Dialog.POPUP_RETURN` のどれかの値が返ります
+     *
      * @param {string} text
      * @param {PopupOption} [option]
-     * @returns {number}
+     * @returns {number} `Dialog.POPUP_RETURN`
      */
     static popupMessage(text: string, option?: PopupOption): number;
     /**
@@ -320,116 +326,101 @@ declare class Dialog {
      */
     static popupSaveAs(option?: SaveAsOption): SFile | null;
     /**
-     * 「OK」のボタン配置
-     * @type {number}
+     * `Dialog.popupMessage` 引数用の定数
+     * @type {typePopupMessageOption}
      */
-    static MB_OK: number;
+    static POPUP_OPTION_TYPE: typePopupMessageOption;
     /**
-     * 「OK」、「キャンセル」のボタン配置
-     * @type {number}
+     * `Dialog.popupMessage` の戻り値用の定数
+     * @type {typePopupMessageReturn}
      */
-    static MB_OKCANCEL: number;
-    /**
-     * 「中止」、「再試行」、「無視」のボタン配置
-     * @type {number}
-     */
-    static MB_ABORTRETRYIGNORE: number;
-    /**
-     * 「はい」、「いいえ」、「キャンセル」のボタン配置
-     * @type {number}
-     */
-    static MB_YESNOCANCEL: number;
-    /**
-     * 「はい」、「いいえ」のボタン配置
-     * @type {number}
-     */
-    static MB_YESNO: number;
-    /**
-     * 「再試行」、「キャンセル」のボタン配置
-     * @type {number}
-     */
-    static MB_RETRYCANCEL: number;
-    /**
-     * 中止「Stop」のアイコンのダイアログ
-     * @type {number}
-     */
-    static MB_ICONSTOP: number;
-    /**
-     * 質問「?」のアイコンのダイアログ
-     * @type {number}
-     */
-    static MB_ICONQUESTION: number;
-    /**
-     * 警告「!」のアイコンのダイアログ
-     * @type {number}
-     */
-    static MB_ICONWARNING: number;
-    /**
-     * 情報「i」のアイコンのダイアログ
-     * @type {number}
-     */
-    static MB_ICONINFORMATION: number;
-    /**
-     * 「ボタン1」を選択
-     * @type {number}
-     */
-    static MB_DEFBUTTON1: number;
-    /**
-     * 「ボタン2」を選択
-     * @type {number}
-     */
-    static MB_DEFBUTTON2: number;
-    /**
-     * 「ボタン3」を選択
-     * @type {number}
-     */
-    static MB_DEFBUTTON3: number;
-    /**
-     * 「ボタン4」を選択
-     * @type {number}
-     */
-    static MB_DEFBUTTON4: number;
-    /**
-     * タイムアウトが発生
-     * @type {number}
-     */
-    static IDTIMEOUT: number;
-    /**
-     * 「OK」を選択
-     * @type {number}
-     */
-    static IDOK: number;
-    /**
-     * 「キャンセル」を選択
-     * @type {number}
-     */
-    static IDCANCEL: number;
-    /**
-     * 「中止」を選択
-     * @type {number}
-     */
-    static IDABORT: number;
-    /**
-     * 「再試行」を選択
-     * @type {number}
-     */
-    static IDRETRY: number;
-    /**
-     * 「無視」を選択
-     * @type {number}
-     */
-    static IDIGNORE: number;
-    /**
-     * 「はい」を選択
-     * @type {number}
-     */
-    static IDYES: number;
-    /**
-     * 「いいえ」を選択
-     * @type {number}
-     */
-    static IDNO: number;
+    static POPUP_RETURN: typePopupMessageReturn;
 }
+
+/**
+ * メッセージボックスのボタン配置
+ * @typedef {Object} typePopupMessageButton
+ * @property {number} MB_OK 「OK」のボタン配置
+ * @property {number} MB_OKCANCEL 「OK」、「キャンセル」のボタン配置
+ * @property {number} MB_ABORTRETRYIGNORE 「中止」、「再試行」、「無視」のボタン配置
+ * @property {number} MB_YESNOCANCEL 「はい」、「いいえ」、「キャンセル」のボタン配置
+ * @property {number} MB_YESNO 「はい」、「いいえ」のボタン配置
+ * @property {number} MB_RETRYCANCEL 「再試行」、「キャンセル」のボタン配置
+ */
+declare type typePopupMessageButton = {
+    MB_OK: number;
+    MB_OKCANCEL: number;
+    MB_ABORTRETRYIGNORE: number;
+    MB_YESNOCANCEL: number;
+    MB_YESNO: number;
+    MB_RETRYCANCEL: number;
+};
+
+/**
+ * メッセージボックスのアイコン
+ * @typedef {Object} typePopupMessageIcon
+ * @property {number} MB_ICONSTOP 中止「Stop」のアイコンのダイアログ
+ * @property {number} MB_ICONQUESTION 質問「?」のアイコンのダイアログ
+ * @property {number} MB_ICONWARNING 警告「!」のアイコンのダイアログ
+ * @property {number} MB_ICONINFORMATION 情報「i」のアイコンのダイアログ
+ */
+declare type typePopupMessageIcon = {
+    MB_ICONSTOP: number;
+    MB_ICONQUESTION: number;
+    MB_ICONWARNING: number;
+    MB_ICONINFORMATION: number;
+};
+
+/**
+ * メッセージボックスのボタンのデフォルト
+ * @typedef {Object} typePopupMessageDefaultButton
+ * @property {number} MB_DEFBUTTON1 「ボタン1」を選択
+ * @property {number} MB_DEFBUTTON2 「ボタン2」を選択
+ * @property {number} MB_DEFBUTTON3 「ボタン3」を選択
+ * @property {number} MB_DEFBUTTON4 「ボタン4」を選択
+ */
+declare type typePopupMessageDefaultButton = {
+    MB_DEFBUTTON1: number;
+    MB_DEFBUTTON2: number;
+    MB_DEFBUTTON3: number;
+    MB_DEFBUTTON4: number;
+};
+
+/**
+ * メッセージボックスのボタンのデフォルト
+ * @typedef {Object} typePopupMessageOption
+ * @property {typePopupMessageButton} BUTTON ボタン配置
+ * @property {typePopupMessageIcon} ICON アイコン
+ * @property {typePopupMessageDefaultButton} DEFAULT_BUTTON ボタンのデフォルト
+ */
+declare type typePopupMessageOption = {
+    BUTTON: typePopupMessageButton;
+    ICON: typePopupMessageIcon;
+    DEFAULT_BUTTON: typePopupMessageDefaultButton;
+};
+
+/**
+ * メッセージボックスの戻り値
+ * @typedef {Object} typePopupMessageReturn
+ * @property {number} IDTIMEOUT タイムアウトが発生
+ * @property {number} IDOK 「OK」を選択
+ * @property {number} IDCANCEL 「キャンセル」を選択
+ * @property {number} IDABORT 「中止」を選択
+ * @property {number} IDRETRY 「再試行」を選択
+ * @property {number} IDIGNORE 「無視」を選択
+ * @property {number} IDYES 「はい」を選択
+ * @property {number} IDNO 「いいえ」を選択
+ */
+declare type typePopupMessageReturn = {
+    IDTIMEOUT: number;
+    IDOK: number;
+    IDCANCEL: number;
+    IDABORT: number;
+    IDRETRY: number;
+    IDIGNORE: number;
+    IDYES: number;
+    IDNO: number;
+};
 
 /**
  * The script is part of SenkoWSH.
@@ -476,24 +467,6 @@ declare class ExtendsArray {
      * @returns {any[]}
      */
     static sort(array: any[], compareFunction?: (...params: any[]) => any): any[];
-    /**
-     * @param {any[]} array
-     * @returns {string}
-     */
-    static toString(array: any[]): string;
-}
-
-/**
- * ES3相当のJScirptのObject拡張用クラス
- * - ES3 に機能拡張する予定でしたが for in の動作に支障が出るため拡張なしとする
- */
-declare class ExtendsObject {
-    /**
-     * 文字列化
-     * @param {any} obj
-     * @returns {string}
-     */
-    static toString(obj: any): string;
 }
 
 /**
@@ -970,12 +943,6 @@ declare type VirtualKeyCodes = {
 };
 
 /**
- * 仮想キーコード一覧
- * @type {VirtualKeyCodes}
- */
-declare const VK_DATA: VirtualKeyCodes;
-
-/**
  * マウスイベント用コード
  * @typedef {Object} MouseEventFCodes
  * @property {number} MOUSEEVENTF_ABSOLUTE
@@ -1017,9 +984,9 @@ declare const MOUSEEVENTF_DATA: MouseEventFCodes;
  * @property {boolean} [is_not_pushed=false] 押さない
  * @property {boolean} [is_not_released=false] 離さない
  * @property {number} [push_time_sec=0] 押下時間
- * @property {boolean} [is_pressed_shift=false]
- * @property {boolean} [is_pressed_alt=false]
- * @property {boolean} [is_pressed_ctrl=false]
+ * @property {boolean} [is_pressed_shift=false] `+ Shift`
+ * @property {boolean} [is_pressed_alt=false] `+ Alt`
+ * @property {boolean} [is_pressed_ctrl=false] `+ Ctrl`
  */
 declare type KeyEventOption = {
     count_max?: number;
@@ -1063,18 +1030,16 @@ declare type RobotGetHandleData = {
 declare class Robot {
     /**
      * キーを入力する
-     * @param {VirtualKeyCode} vkcode - キーコード（利用可能なコードは、Robot.getVK() で取得可能）
+     * - キーコードは定数クラス `Robot.VK` を使用ください
+     *
+     * @param {VirtualKeyCode} vkcode - キーコード
      * @param {KeyEventOption} [option] - オプション
      */
     static setKeyEvent(vkcode: VirtualKeyCode, option?: KeyEventOption): void;
     /**
-     * 仮想キーコードの一覧を取得します
-     * @returns {VirtualKeyCodes}
-     */
-    static getVK(): VirtualKeyCodes;
-    /**
      * マウスのクリックを行う
-     * @param {string} type - "LEFT", "RIGHT", "CLICK", "DOUBLE_CLICK"といった文字列
+     *
+     * @param {string} type - `"LEFT"`, `"RIGHT"`, `"CLICK"`, `"DOUBLE_CLICK"` といった文字列
      * @param {KeyEventOption} [option] - オプション
      */
     static setMouseEvent(type: string, option?: KeyEventOption): void;
@@ -1153,6 +1118,11 @@ declare class Robot {
      * @param {number} pid
      */
     static terminateProcess(pid: number): void;
+    /**
+     * 仮想キーコード一覧
+     * @type {VirtualKeyCodes}
+     */
+    static VK: VirtualKeyCodes;
 }
 
 /**
@@ -1180,13 +1150,21 @@ declare class SFile {
     copy(file_obj: string | SFile): boolean;
     /**
      * ファイルの移動
-     * @param {string|SFile} file_obj
+     * - 移動後の `this` は、移動後のファイルを指す
+     * - `this` がファイルの場合、ディレクトリを選択すると、ディレクトリ内へファイルを移動させます
+     * - `this` がファイルの場合、ファイルを選択すると、ディレクトリの移動かつファイル名を変更します
+     * - `this` がディレクトリの場合、指定したディレクトリへファイルを移動させるため、ディレクトリ名の変更は行えません
+     *
+     * @param {string|SFile} file_obj - 移動先のファイル名及びディレクトリ
      * @returns {boolean}
      */
     move(file_obj: string | SFile): boolean;
     /**
      * ファイル名を変更
-     * @param {string|SFile} file_obj
+     * - 変更後の `this` は、変更後のファイルを指す
+     * - 引数はフルパスを渡した場合でもファイル名のみ使用する
+     *
+     * @param {string|SFile} file_obj 変更後のファイル名
      * @returns {boolean}
      */
     renameTo(file_obj: string | SFile): boolean;
@@ -1202,7 +1180,9 @@ declare class SFile {
     getName(): string;
     /**
      * 親フォルダの絶対パス
-     * URLなら最後にスラッシュをつけて返す
+     * - 通常のフォルダの場合は、最後の「`/`」は除去される
+     * - URLなら最後にスラッシュをつけて返す
+     *
      * @returns {string}
      */
     getParent(): string;
@@ -1249,7 +1229,7 @@ declare class SFile {
      */
     isHidden(): boolean;
     /**
-     *隠しファイルかどうかを設定する
+     * 隠しファイルかどうかを設定する
      * @param {boolean} is_hidden
      * @param {boolean} [is_allfiles=false]
      * @returns {boolean}
@@ -1299,7 +1279,8 @@ declare class SFile {
     /**
      * フォルダを作成
      * - フォルダは1つのみ指定可能
-     * - すでにフォルダがある場合はエラーを返す。
+     * - すでにフォルダがある場合はエラーを返す
+     *
      * @returns {boolean}
      */
     mkdir(): boolean;
@@ -1307,6 +1288,7 @@ declare class SFile {
      * フォルダを作成
      * - 作成したいフォルダを続けて記載が可能
      * - フォルダがない場合はフォルダを作成していく
+     *
      * @returns {boolean}
      */
     mkdirs(): boolean;
@@ -1324,39 +1306,47 @@ declare class SFile {
      */
     writeLine(text: string): boolean;
     /**
-     * テキストファイルを開く
+     * ローカル、インターネット上のファイルをテキストとして開く
+     * - 開けない場合は `null` を返す
+     * - 改行コードは `\n` に統一される
+     *
      * @param {string} [charset="_autodetect_all"] - 文字コード
      * @returns {string}
      */
-    getTextFile(charset?: string): string;
+    readString(charset?: string): string;
     /**
      * テキストファイルを保存
+     * - 保存できなかった場合は `false` を返す
+     * - 変換先の文字コードに存在しない文字は、`"?"`に変換される
+     *
      * @param {string} text
      * @param {string} [charset="utf-8"] - 文字コード
      * @param {string} [newline="\n"] - 改行コード
      * @param {boolean} [issetBOM=true] - BOMの有無(`utf-8`のみ有効 )
      * @returns {boolean}
      */
-    setTextFile(text: string, charset?: string, newline?: string, issetBOM?: boolean): boolean;
+    writeString(text: string, charset?: string, newline?: string, issetBOM?: boolean): boolean;
     /**
-     * バイナリファイルを開く
+     * ローカル、インターネット上のファイルをバイナリとして開く
+     * - 開けない場合は `null` を返す
      * - 参考速度：0.5 sec/MB
      * - 巨大なファイルの一部を調べる場合は、位置とサイズを指定した方がよい
      *
      * @param {number} [offset] - 位置（※ 指定すると速度が低下する）
      * @param {number} [size] - サイズ（※ 指定すると速度が低下する）
-     * @returns {number[]}
+     * @returns {number[]|null}
      */
-    getBinaryFile(offset?: number, size?: number): number[];
+    readBinary(offset?: number, size?: number): number[] | null;
     /**
      * バイナリファイルを保存
+     * - 保存できなかった場合は `false` を返す
      * - 参考速度：1.0 sec/MB
      *
      * @param {number[]} array_
      * @param {number} [offset] - 位置（※ 指定すると速度が低下する）
      * @returns {boolean}
      */
-    setBinaryFile(array_: number[], offset?: number): boolean;
+    writeBinary(array_: number[], offset?: number): boolean;
     /**
      * ファイルのハッシュ値を計算する
      * @param {string} [algorithm="MD5"] - アルゴリズム
@@ -1391,11 +1381,25 @@ declare class SFile {
     getAllFiles(): SFile[];
     /**
      * 指定した条件にあうファイルを探す
-     * 関数を指定する場合は、ファイル名とフルパスが引数に渡されます
-     * @param {string|SFile|function(string, string): boolean} file_obj
+     * - `from` のディレクトリ配下で条件に合ったファイルを返します
+     * - 見つかったら探索を中止します
+     * - 見つからない場合は `null` を返します
+     *
+     * @param {string|SFile} from
+     * @param {string|SFile|RegExp|function(SFile): boolean} target
+     *
      * @returns {SFile|null}
      */
-    searchFile(file_obj: string | SFile | ((...params: any[]) => any)): SFile | null;
+    static findFile(from: string | SFile, target: string | SFile | RegExp | ((...params: any[]) => any)): SFile | null;
+    /**
+     * 指定した条件にあう全ファイルを探す
+     * - `from` のディレクトリ配下で条件に合ったファイル一覧を返します
+     *
+     * @param {string|SFile} from
+     * @param {string|SFile|RegExp|function(SFile): boolean} target
+     * @returns {SFile[]}
+     */
+    static findFiles(from: string | SFile, target: string | SFile | RegExp | ((...params: any[]) => any)): SFile[];
     /**
      * 圧縮する
      * - 圧縮後のファイル名の拡張子で圧縮したい形式を指定する
@@ -1500,14 +1504,21 @@ declare class System {
      */
     static beep(frequency_hz: number, time_sec: number): void;
     /**
-     * 指定したコマンドを別プロセスとして実行する
+     * 指定したコマンドを別プロセスとして非同期／同期実行する
+     * - 第3引数で `true` を指定しないと、非同期コマンドとなります
+     * - 例外発生時の戻り値は `1` となります
+     *
      * @param {string} command - コマンド
-     * @param {number} [style=1] - 起動オプション
+     * @param {number} [style=1] - 起動オプション (`System.AppWinStype` 内の値)
      * @param {boolean} [is_wait=false] - プロセスが終了するまで待つ
+     * @return {number} 通常 `0` で正常終了
+     *
      */
-    static run(command: string, style?: number, is_wait?: boolean): void;
+    static run(command: string, style?: number, is_wait?: boolean): number;
     /**
      * 指定したコマンドを子プロセスとして実行する
+     * - 例外発生時の戻り値は `exit_code = 1` となります
+     *
      * @param {string} command
      * @returns {SystemExecResult}
      */
@@ -1564,19 +1575,23 @@ declare class System {
     static initializeCurrentDirectory(): void;
     /**
      * BatchScript を実行する
+     * - 実行結果の最終行が空白の場合は除去されます
+     * - 実行時にスクリプトの最後が改行で終わっていない場合は自動で改行を付けます
+     * - `Unicode`, `UTF-16LE` は未対応となります
      *
      * @param {string} source
-     * @param {string} [charset="ansi"] - 文字コード
-     * @returns {SystemExecResult|null}
+     * @param {string} [charset="shift_jis"] - 文字コード (`shift_jis`, `utf-8` など)
+     * @returns {string|null} 実行結果
      */
-    static BatchScript(source: string, charset?: string): SystemExecResult | null;
+    static execBatchScript(source: string, charset?: string): string | null;
     /**
      * PowerShell を実行する
+     * - 実行結果の最終行が空白の場合は除去されます
      *
      * @param {string} source
-     * @returns {string}
+     * @returns {string} 実行結果
      */
-    static PowerShell(source: string): string;
+    static execPowerShell(source: string): string;
     /**
      * WindowsAPI を実行する
      *
@@ -1589,7 +1604,7 @@ declare class System {
      * @param {string} exec_text - 実行コマンド
      * @returns {string}
      */
-    static WindowsAPI(dll_name: string, function_text: string, exec_text: string): string;
+    static callWindowsAPI(dll_name: string, function_text: string, exec_text: string): string;
     /**
      * クリップボードからテキストを取得する
      * @returns {string}
@@ -1632,7 +1647,52 @@ declare class System {
      * @returns {any}
      */
     static createByteArrayFromNumberArray(number_array: number[], offset?: number): any;
+    /**
+     * データの型を小文字の英字で返す
+     * - 配列 : `array`
+     * - 正規表現 : `regexp`
+     * - 例外エラー : `error`
+     * - 関数 : `function`
+     * - クラス : `object` など
+     *
+     * @param {any} x
+     * @returns {string}
+     */
+    static typeOf(x: any): string;
+    /**
+     * 指定した値が `NativeCode` かを判定します
+     * - JavaScript エンジンが用意している関数など : `true`
+     * - その他 : `false`
+     *
+     * @param {any} x
+     * @returns {boolean}
+     */
+    static isNativeCode(x: any): boolean;
+    /**
+     * `System.run` の起動オプション用のコード一覧
+     * @type {typeAppWinStyle}
+     */
+    static AppWinStype: typeAppWinStyle;
 }
+
+/**
+ * `System.run` の起動オプション用のコード
+ * @typedef {Object} typeAppWinStyle
+ * @property {number} Hide
+ * @property {number} NormalFocus
+ * @property {number} MinimizedFocus
+ * @property {number} MaximizedFocus
+ * @property {number} NormalNoFocus
+ * @property {number} MinimizedNoFocus
+ */
+declare type typeAppWinStyle = {
+    Hide: number;
+    NormalFocus: number;
+    MinimizedFocus: number;
+    MaximizedFocus: number;
+    NormalNoFocus: number;
+    MinimizedNoFocus: number;
+};
 
 /**
  * SenkoWSH
