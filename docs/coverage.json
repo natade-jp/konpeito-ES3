@@ -1,7 +1,7 @@
 {
   "coverage": "100%",
-  "expectCount": 549,
-  "actualCount": 549,
+  "expectCount": 556,
+  "actualCount": 556,
   "files": {
     "src/konpeito-ES3.js": {
       "expectCount": 2,
@@ -36,6 +36,21 @@
     "src/math/core/tools/Statistics.js": {
       "expectCount": 18,
       "actualCount": 18,
+      "undocumentLines": []
+    },
+    "src/math/tools/DataAnalysis/MultipleRegressionAnalysis.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "src/math/tools/DataAnalysis/PrincipalComponentAnalysis.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "src/math/tools/DataAnalysis.js": {
+      "expectCount": 3,
+      "actualCount": 3,
       "undocumentLines": []
     },
     "src/math/tools/Polyfill.js": {

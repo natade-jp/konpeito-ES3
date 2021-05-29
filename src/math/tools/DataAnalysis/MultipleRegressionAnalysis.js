@@ -115,6 +115,18 @@ export default class MultipleRegressionAnalysis {
 
 		// 共分散行列
 		const S = samples.cov(set_unbiased);
+
+		console.log("settings.samples")
+		console.log(settings.samples)
+		console.log("settings.target")
+		console.log(settings.target)
+
+		console.log("samples")
+		console.log(samples)
+
+		console.log("S")
+		console.log(S)
+
 		const S_rcond = S.rcond();
 		// どこかの値に相関が非常に高いものがあり計算できない。
 		if(S_rcond <= 1e-10) {
@@ -132,16 +144,58 @@ export default class MultipleRegressionAnalysis {
 
 		// 偏回帰係数(縦ベクトル) partial regression coefficient. (column vector)
 		const partial_regression_coefficient =  S.inv().mul(Y);
+
+
+		console.log("partial_regression_coefficient")
+		console.log(partial_regression_coefficient)
+
+
 		// バイアス・定数項・切片 bias
 		const bias = target.mean().sub(samples.mean().mul(partial_regression_coefficient));
+
+
+		console.log("bias")
+		console.log(bias)
+
+
+
 		// 予測値(縦ベクトル) predicted values. (column vector)
 		const predicted_values = samples.mul(partial_regression_coefficient).add(bias);
+
+
+		console.log("predicted_values")
+		console.log(predicted_values)
+
+
+
+
 		// 目的変量の予測値の分散
 		const sY = predicted_values.variance(set_unbiased);
+
+		console.log("sY")
+		console.log(sY)
+
+
+
+
 		// 目的変量の実測値の分散
 		const sy = target.variance(set_unbiased);
+
+
+		
+		console.log("sy")
+		console.log(sy)
+
+
+
 		// 重相関係数
 		const multiple_R = predicted_values.corrcoef(target, set_unbiased);
+
+		console.log("multiple_R")
+		console.log(multiple_R)
+
+
+
 		// 決定係数・寄与率
 		const R_square = sY.div(sy);
 

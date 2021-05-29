@@ -40,6 +40,18 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/Random.js~Random.html">Random</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html">Statistics</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#math-tools">math/tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/tools/DataAnalysis.js~DataAnalysis.html">DataAnalysis</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#math-tools-dataanalysis">math/tools/DataAnalysis</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/tools/DataAnalysis/MultipleRegressionAnalysis.js~MultipleRegressionAnalysis.html">MultipleRegressionAnalysis</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/tools/DataAnalysis/PrincipalComponentAnalysis.js~PrincipalComponentAnalysis.html">PrincipalComponentAnalysis</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KMultipleRegressionAnalysisAnova">KMultipleRegressionAnalysisAnova</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KMultipleRegressionAnalysisOutput">KMultipleRegressionAnalysisOutput</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KMultipleRegressionAnalysisPartialRegression">KMultipleRegressionAnalysisPartialRegression</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KMultipleRegressionAnalysisPartialRegressionData">KMultipleRegressionAnalysisPartialRegressionData</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KMultipleRegressionAnalysisSettings">KMultipleRegressionAnalysisSettings</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KMultipleRegressionAnalysisVectorState">KMultipleRegressionAnalysisVectorState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KPrincipalComponent">KPrincipalComponent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KPrincipalComponentAnalysisOutput">KPrincipalComponentAnalysisOutput</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KPrincipalComponentAnalysisSettings">KPrincipalComponentAnalysisSettings</a></span></span></li>
 </ul>
 </div>
 </nav>
@@ -1026,7 +1038,7 @@ export default class Matrix {
 			return new Matrix(array_function(row_array));
 		}
 		else {
-			const y = Matrix.ZERO;
+			const y = Matrix.ZERO.clone();
 			y._resize(1, this.column_length);
 			// 1&#x5217;&#x3001;&#x884C;&#x5217;&#x3067;&#x3042;&#x308C;&#x3070;&#x3001;&#x5217;&#x3054;&#x3068;&#x306B;&#x51E6;&#x7406;&#x3092;&#x884C;&#x3046;
 			for(let col = 0; col &lt; this.column_length; col++) {
@@ -1052,7 +1064,7 @@ export default class Matrix {
 	 * @returns {Matrix} Matrix after function processing.
 	 */
 	eachVectorBoth(array_function) {
-		const y1 = Matrix.ZERO;
+		const y1 = Matrix.ZERO.clone();
 		// &#x884C;&#x3054;&#x3068;&#x306B;&#x51E6;&#x7406;&#x3092;&#x884C;&#x3046;
 		y1._resize(this.row_length, 1);
 		for(let row = 0; row &lt; this.row_length; row++) {
@@ -1066,7 +1078,7 @@ export default class Matrix {
 				y1.matrix_array[row][col] = row_output[col];
 			}
 		}
-		const y2 = Matrix.ZERO;
+		const y2 = Matrix.ZERO.clone();
 		// &#x5217;&#x3054;&#x3068;&#x306B;&#x51E6;&#x7406;&#x3092;&#x884C;&#x3046;
 		y2._resize(1, y1.column_length);
 		for(let col = 0; col &lt; y1.column_length; col++) {
@@ -1089,7 +1101,7 @@ export default class Matrix {
 	 * @returns {Matrix} Matrix after function processing.
 	 */
 	eachVectorRow(array_function) {
-		const y = Matrix.ZERO;
+		const y = Matrix.ZERO.clone();
 		// &#x884C;&#x3054;&#x3068;&#x306B;&#x51E6;&#x7406;&#x3092;&#x884C;&#x3046;
 		y._resize(this.row_length, 1);
 		for(let row = 0; row &lt; this.row_length; row++) {
@@ -1112,7 +1124,7 @@ export default class Matrix {
 	 * @returns {Matrix} Matrix after function processing.
 	 */
 	eachVectorColumn(array_function) {
-		const y = Matrix.ZERO;
+		const y = Matrix.ZERO.clone();
 		// &#x5217;&#x3054;&#x3068;&#x306B;&#x51E6;&#x7406;&#x3092;&#x884C;&#x3046;
 		y._resize(1, this.column_length);
 		for(let col = 0; col &lt; this.column_length; col++) {
@@ -1474,7 +1486,7 @@ export default class Matrix {
 				else {
 					return Complex.ZERO;
 				}
-			}, this.length);
+			}, this.length());
 		}
 		else {
 			// &#x5217;&#x30D9;&#x30AF;&#x30C8;&#x30EB;&#x3092;&#x4F5C;&#x6210;
@@ -2288,7 +2300,7 @@ export default class Matrix {
 			}
 			let x, y;
 			x = this.clone();
-			y = Matrix.eye(this.length);
+			y = Matrix.eye(this.length());
 			while(n !== 0) {
 				if((n &amp; 1) !== 0) {
 					y = y.mul(x);

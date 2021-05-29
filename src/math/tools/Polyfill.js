@@ -146,20 +146,24 @@ export default class Polyfill {
 			};
 		}
 
-		// WSH 用
-		// https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
-		// 2番目の引数が省略された場合の動作の仕様を合わせる
-		const splice_buffer = Array.prototype.splice;
-		Array.prototype.splice = function() {
-			const x = [];
-			for(var i = 0 ; i < arguments.length ; i++) {
-				x.push(arguments[i]);
-			}
-			if(arguments.length === 1) {
-				x.push(this.length - arguments[0]);
-			}
-			return splice_buffer.apply(this, x);
-		};
+		// splice の動作チェック
+	//	const A = [0, 0];
+	//	A.splice(1);
+	//	if(A.length !== 1) {
+			// https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+			// 2番目の引数が省略された場合の動作の仕様を合わせる
+			const splice_buffer = Array.prototype.splice;
+			Array.prototype.splice = function() {
+				const x = [];
+				for(var i = 0 ; i < arguments.length ; i++) {
+					x.push(arguments[i]);
+				}
+				if(arguments.length === 1) {
+					x.push(this.length - arguments[0]);
+				}
+				return splice_buffer.apply(this, x);
+			};
+	//	}
 
 	}
 }

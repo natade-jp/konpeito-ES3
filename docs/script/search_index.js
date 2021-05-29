@@ -6,6 +6,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "konpeito_es3/src/math/tools/dataanalysis.js~dataanalysis",
+    "class/src/math/tools/DataAnalysis.js~DataAnalysis.html",
+    "<span>DataAnalysis</span> <span class=\"search-result-import-path\">konpeito_es3/src/math/tools/DataAnalysis.js</span>",
+    "class"
+  ],
+  [
     "konpeito_es3/src/math/core/tools/linearalgebra.js~linearalgebra",
     "class/src/math/core/tools/LinearAlgebra.js~LinearAlgebra.html",
     "<span>LinearAlgebra</span> <span class=\"search-result-import-path\">konpeito_es3/src/math/core/tools/LinearAlgebra.js</span>",
@@ -15,6 +21,18 @@ window.esdocSearchIndex = [
     "konpeito_es3/src/math/core/matrix.js~matrix",
     "class/src/math/core/Matrix.js~Matrix.html",
     "<span>Matrix</span> <span class=\"search-result-import-path\">konpeito_es3/src/math/core/Matrix.js</span>",
+    "class"
+  ],
+  [
+    "konpeito_es3/src/math/tools/dataanalysis/multipleregressionanalysis.js~multipleregressionanalysis",
+    "class/src/math/tools/DataAnalysis/MultipleRegressionAnalysis.js~MultipleRegressionAnalysis.html",
+    "<span>MultipleRegressionAnalysis</span> <span class=\"search-result-import-path\">konpeito_es3/src/math/tools/DataAnalysis/MultipleRegressionAnalysis.js</span>",
+    "class"
+  ],
+  [
+    "konpeito_es3/src/math/tools/dataanalysis/principalcomponentanalysis.js~principalcomponentanalysis",
+    "class/src/math/tools/DataAnalysis/PrincipalComponentAnalysis.js~PrincipalComponentAnalysis.html",
+    "<span>PrincipalComponentAnalysis</span> <span class=\"search-result-import-path\">konpeito_es3/src/math/tools/DataAnalysis/PrincipalComponentAnalysis.js</span>",
     "class"
   ],
   [
@@ -3333,6 +3351,102 @@ window.esdocSearchIndex = [
     "src/math/core/tools/statistics.js~statistics.variance",
     "class/src/math/core/tools/Statistics.js~Statistics.html#static-method-variance",
     "src/math/core/tools/Statistics.js~Statistics.variance",
+    "method"
+  ],
+  [
+    "src/math/tools/dataanalysis.js",
+    "file/src/math/tools/DataAnalysis.js.html",
+    "src/math/tools/DataAnalysis.js",
+    "file"
+  ],
+  [
+    "src/math/tools/dataanalysis.js~dataanalysis.runmultipleregressionanalysis",
+    "class/src/math/tools/DataAnalysis.js~DataAnalysis.html#static-method-runMultipleRegressionAnalysis",
+    "src/math/tools/DataAnalysis.js~DataAnalysis.runMultipleRegressionAnalysis",
+    "method"
+  ],
+  [
+    "src/math/tools/dataanalysis.js~dataanalysis.runprincipalcomponentanalysis",
+    "class/src/math/tools/DataAnalysis.js~DataAnalysis.html#static-method-runPrincipalComponentAnalysis",
+    "src/math/tools/DataAnalysis.js~DataAnalysis.runPrincipalComponentAnalysis",
+    "method"
+  ],
+  [
+    "src/math/tools/dataanalysis/multipleregressionanalysis.js",
+    "file/src/math/tools/DataAnalysis/MultipleRegressionAnalysis.js.html",
+    "src/math/tools/DataAnalysis/MultipleRegressionAnalysis.js",
+    "file"
+  ],
+  [
+    "src/math/tools/dataanalysis/multipleregressionanalysis.js~kmultipleregressionanalysisanova",
+    "typedef/index.html#static-typedef-KMultipleRegressionAnalysisAnova",
+    "src/math/tools/DataAnalysis/MultipleRegressionAnalysis.js~KMultipleRegressionAnalysisAnova",
+    "typedef"
+  ],
+  [
+    "src/math/tools/dataanalysis/multipleregressionanalysis.js~kmultipleregressionanalysisoutput",
+    "typedef/index.html#static-typedef-KMultipleRegressionAnalysisOutput",
+    "src/math/tools/DataAnalysis/MultipleRegressionAnalysis.js~KMultipleRegressionAnalysisOutput",
+    "typedef"
+  ],
+  [
+    "src/math/tools/dataanalysis/multipleregressionanalysis.js~kmultipleregressionanalysispartialregression",
+    "typedef/index.html#static-typedef-KMultipleRegressionAnalysisPartialRegression",
+    "src/math/tools/DataAnalysis/MultipleRegressionAnalysis.js~KMultipleRegressionAnalysisPartialRegression",
+    "typedef"
+  ],
+  [
+    "src/math/tools/dataanalysis/multipleregressionanalysis.js~kmultipleregressionanalysispartialregressiondata",
+    "typedef/index.html#static-typedef-KMultipleRegressionAnalysisPartialRegressionData",
+    "src/math/tools/DataAnalysis/MultipleRegressionAnalysis.js~KMultipleRegressionAnalysisPartialRegressionData",
+    "typedef"
+  ],
+  [
+    "src/math/tools/dataanalysis/multipleregressionanalysis.js~kmultipleregressionanalysissettings",
+    "typedef/index.html#static-typedef-KMultipleRegressionAnalysisSettings",
+    "src/math/tools/DataAnalysis/MultipleRegressionAnalysis.js~KMultipleRegressionAnalysisSettings",
+    "typedef"
+  ],
+  [
+    "src/math/tools/dataanalysis/multipleregressionanalysis.js~kmultipleregressionanalysisvectorstate",
+    "typedef/index.html#static-typedef-KMultipleRegressionAnalysisVectorState",
+    "src/math/tools/DataAnalysis/MultipleRegressionAnalysis.js~KMultipleRegressionAnalysisVectorState",
+    "typedef"
+  ],
+  [
+    "src/math/tools/dataanalysis/multipleregressionanalysis.js~multipleregressionanalysis.runmultipleregressionanalysis",
+    "class/src/math/tools/DataAnalysis/MultipleRegressionAnalysis.js~MultipleRegressionAnalysis.html#static-method-runMultipleRegressionAnalysis",
+    "src/math/tools/DataAnalysis/MultipleRegressionAnalysis.js~MultipleRegressionAnalysis.runMultipleRegressionAnalysis",
+    "method"
+  ],
+  [
+    "src/math/tools/dataanalysis/principalcomponentanalysis.js",
+    "file/src/math/tools/DataAnalysis/PrincipalComponentAnalysis.js.html",
+    "src/math/tools/DataAnalysis/PrincipalComponentAnalysis.js",
+    "file"
+  ],
+  [
+    "src/math/tools/dataanalysis/principalcomponentanalysis.js~kprincipalcomponent",
+    "typedef/index.html#static-typedef-KPrincipalComponent",
+    "src/math/tools/DataAnalysis/PrincipalComponentAnalysis.js~KPrincipalComponent",
+    "typedef"
+  ],
+  [
+    "src/math/tools/dataanalysis/principalcomponentanalysis.js~kprincipalcomponentanalysisoutput",
+    "typedef/index.html#static-typedef-KPrincipalComponentAnalysisOutput",
+    "src/math/tools/DataAnalysis/PrincipalComponentAnalysis.js~KPrincipalComponentAnalysisOutput",
+    "typedef"
+  ],
+  [
+    "src/math/tools/dataanalysis/principalcomponentanalysis.js~kprincipalcomponentanalysissettings",
+    "typedef/index.html#static-typedef-KPrincipalComponentAnalysisSettings",
+    "src/math/tools/DataAnalysis/PrincipalComponentAnalysis.js~KPrincipalComponentAnalysisSettings",
+    "typedef"
+  ],
+  [
+    "src/math/tools/dataanalysis/principalcomponentanalysis.js~principalcomponentanalysis.runprincipalcomponentanalysis",
+    "class/src/math/tools/DataAnalysis/PrincipalComponentAnalysis.js~PrincipalComponentAnalysis.html#static-method-runPrincipalComponentAnalysis",
+    "src/math/tools/DataAnalysis/PrincipalComponentAnalysis.js~PrincipalComponentAnalysis.runPrincipalComponentAnalysis",
     "method"
   ],
   [

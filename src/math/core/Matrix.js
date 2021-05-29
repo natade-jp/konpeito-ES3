@@ -979,7 +979,7 @@ export default class Matrix {
 			return new Matrix(array_function(row_array));
 		}
 		else {
-			const y = Matrix.ZERO;
+			const y = Matrix.ZERO.clone();
 			y._resize(1, this.column_length);
 			// 1列、行列であれば、列ごとに処理を行う
 			for(let col = 0; col < this.column_length; col++) {
@@ -1005,7 +1005,7 @@ export default class Matrix {
 	 * @returns {Matrix} Matrix after function processing.
 	 */
 	eachVectorBoth(array_function) {
-		const y1 = Matrix.ZERO;
+		const y1 = Matrix.ZERO.clone();
 		// 行ごとに処理を行う
 		y1._resize(this.row_length, 1);
 		for(let row = 0; row < this.row_length; row++) {
@@ -1019,7 +1019,7 @@ export default class Matrix {
 				y1.matrix_array[row][col] = row_output[col];
 			}
 		}
-		const y2 = Matrix.ZERO;
+		const y2 = Matrix.ZERO.clone();
 		// 列ごとに処理を行う
 		y2._resize(1, y1.column_length);
 		for(let col = 0; col < y1.column_length; col++) {
@@ -1042,7 +1042,7 @@ export default class Matrix {
 	 * @returns {Matrix} Matrix after function processing.
 	 */
 	eachVectorRow(array_function) {
-		const y = Matrix.ZERO;
+		const y = Matrix.ZERO.clone();
 		// 行ごとに処理を行う
 		y._resize(this.row_length, 1);
 		for(let row = 0; row < this.row_length; row++) {
@@ -1065,7 +1065,7 @@ export default class Matrix {
 	 * @returns {Matrix} Matrix after function processing.
 	 */
 	eachVectorColumn(array_function) {
-		const y = Matrix.ZERO;
+		const y = Matrix.ZERO.clone();
 		// 列ごとに処理を行う
 		y._resize(1, this.column_length);
 		for(let col = 0; col < this.column_length; col++) {

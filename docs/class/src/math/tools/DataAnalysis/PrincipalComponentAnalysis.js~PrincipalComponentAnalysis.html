@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl" href="../../">
-  <title data-ice="title">src/konpeito-ES3.js | konpeito_es3</title>
+  <base data-ice="baseUrl" href="../../../../../">
+  <title data-ice="title">PrincipalComponentAnalysis | konpeito_es3</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -56,110 +56,169 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/konpeito-ES3.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">&#xFEFF;/**
- * The script is part of konpeito-ES3.
- * 
- * AUTHOR:
- *  natade (http://twitter.com/natadea)
- * 
- * LICENSE:
- *  The MIT license https://opensource.org/licenses/MIT
- */
+<div class="content" data-ice="content"><div class="header-notice">
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import PrincipalComponentAnalysis from &apos;<span><a href="file/src/math/tools/DataAnalysis/PrincipalComponentAnalysis.js.html#lineNumber41">konpeito_es3/src/math/tools/DataAnalysis/PrincipalComponentAnalysis.js</a></span>&apos;</code></pre></div>
+  <span data-ice="access">public</span>
+  <span data-ice="kind">class</span>
+  
+  
+  
+  <span data-ice="source">| <span><a href="file/src/math/tools/DataAnalysis/PrincipalComponentAnalysis.js.html#lineNumber41">source</a></span></span>
+</div>
 
-import Polyfill from &quot;./math/tools/Polyfill.js&quot;;
-import typeComplex from &quot;./math/core/Complex.js&quot;;
-import typeMatrix from &quot;./math/core/Matrix.js&quot;;
-import typeProbability from &quot;./math/core/tools/Probability.js&quot;;
-import typeStatistics from &quot;./math/core/tools/Statistics.js&quot;;
-import typeLinearAlgebra from &quot;./math/core/tools/LinearAlgebra.js&quot;;
-import typeDataAnalysis from &quot;./math/tools/DataAnalysis.js&quot;;
+<div class="self-detail detail">
+  <h1 data-ice="name">PrincipalComponentAnalysis</h1>
 
-/**
- * konpeito-ES3
- */
-// @ts-ignore
-// eslint-disable-next-line no-undef
-const konpeitoES3 = {
-	
-	/**
-	 * Complex
- 	 * @type {typeof typeComplex}
-	 */
-	Complex : typeComplex,
-	
-	/**
-	 * Matrix
- 	 * @type {typeof typeMatrix}
-	 */
-	Matrix : typeMatrix,
+  
 
-	/**
-	 * Probability
- 	 * @type {typeProbability}
-	 */
-	Probability : typeProbability,
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
-	/**
-	 * Statistics
- 	 * @type {typeStatistics}
-	 */
-	Statistics : typeStatistics,
+  
+  
+  <div class="description" data-ice="description"><p>Principal component analysis.</p>
+</div>
+  
 
-	/**
-	 * LinearAlgebra
- 	 * @type {typeLinearAlgebra}
-	 */
-	LinearAlgebra : typeLinearAlgebra,
+  
 
-	/**
-	 * DataAnalysis
- 	 * @type {typeDataAnalysis}
-	 */
-	DataAnalysis : typeDataAnalysis
+  
 
-};
+  
 
-export default konpeitoES3;
-
-/**
- * globalThis
- * @private
- */
-const global_var = ( function() { return this; } ).apply( null, [] );
-
-if(!(&quot;Complex&quot; in global_var)) {
-	// @ts-ignore
-	Complex = typeComplex;
-}
-
-if(!(&quot;Matrix&quot; in global_var)) {
-	// @ts-ignore
-	Matrix = typeMatrix;
-}
-
-if(!(&quot;Probability&quot; in global_var)) {
-	// @ts-ignore
-	Probability = typeProbability;
-}
-
-if(!(&quot;Statistics&quot; in global_var)) {
-	// @ts-ignore
-	Statistics = typeStatistics;
-}
-
-if(!(&quot;LinearAlgebra&quot; in global_var)) {
-	// @ts-ignore
-	LinearAlgebra = typeLinearAlgebra;
-}
-
-if(!(&quot;DataAnalysis&quot; in global_var)) {
-	// @ts-ignore
-	DataAnalysis = typeDataAnalysis;
-}
+  
+</div>
 
 
-</code></pre>
+<div data-ice="staticMethodSummary"><h2>Static Method Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Static Public Methods</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      <span data-ice="static">static</span>
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/math/tools/DataAnalysis/PrincipalComponentAnalysis.js~PrincipalComponentAnalysis.html#static-method-runPrincipalComponentAnalysis">runPrincipalComponentAnalysis</a></span></span><span class="code" data-ice="signature">(settings: <span><a href="typedef/index.html#static-typedef-KPrincipalComponentAnalysisSettings">KPrincipalComponentAnalysisSettings</a></span>): <span><a href="typedef/index.html#static-typedef-KPrincipalComponentAnalysisOutput">KPrincipalComponentAnalysisOutput</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Principal component analysis.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+<div data-ice="staticMethodDetails"><h2 data-ice="title">Static Public Methods</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-method-runPrincipalComponentAnalysis">
+    <span class="access" data-ice="access">public</span>
+    <span data-ice="static">static</span>
+    
+    
+    
+    
+    <span class="code" data-ice="name">runPrincipalComponentAnalysis</span><span class="code" data-ice="signature">(settings: <span><a href="typedef/index.html#static-typedef-KPrincipalComponentAnalysisSettings">KPrincipalComponentAnalysisSettings</a></span>): <span><a href="typedef/index.html#static-typedef-KPrincipalComponentAnalysisOutput">KPrincipalComponentAnalysisOutput</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/tools/DataAnalysis/PrincipalComponentAnalysis.js.html#lineNumber48">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Principal component analysis.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">settings</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KPrincipalComponentAnalysisSettings">KPrincipalComponentAnalysisSettings</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>input data</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="typedef/index.html#static-typedef-KPrincipalComponentAnalysisOutput">KPrincipalComponentAnalysisOutput</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>analyzed data</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+</div>
+
+
 
 </div>
 
