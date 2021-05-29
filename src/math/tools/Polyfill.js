@@ -147,9 +147,9 @@ export default class Polyfill {
 		}
 
 		// splice の動作チェック
-	//	const A = [0, 0];
-	//	A.splice(1);
-	//	if(A.length !== 1) {
+		const A = [0, 0];
+		A.splice(1);
+		if(A.length !== 1) {
 			// https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
 			// 2番目の引数が省略された場合の動作の仕様を合わせる
 			const splice_buffer = Array.prototype.splice;
@@ -163,7 +163,7 @@ export default class Polyfill {
 				}
 				return splice_buffer.apply(this, x);
 			};
-	//	}
+		}
 
 	}
 }

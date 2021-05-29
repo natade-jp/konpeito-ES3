@@ -9,7 +9,7 @@
 
 - Windows 上で動作する WSH JScript 用汎用ライブラリ
 - Visual Studio Code で JScript での開発を目的とする
-- 統計計算部分（`Complex`, `Matrix` 含む）が行える
+- 信号処理／確率計算／統計計算部分（`Complex`, `Matrix` 含む）が行える
 
 `examples`の`Example.wsf`を実行してみれば、雰囲気はつかめるかと思います。
 詳しい関数の説明は、[ヘルプファイル](https://natade-jp.github.io/konpeito-ES3/)を参照。
@@ -25,6 +25,7 @@
 - `build` - `JScirpt` で動作するライブラリ及び、Visual Studio Code 用の型定義ファイル
 - `src` - コンパイル前のソースコードフォルダ
 - `docs` - 自動生成したヘルプファイル
+- `test` - プログラムが正しく動作するか確認用のフォルダ
 - `scripts` - `Node.js` で実行するスクリプトファイル（`package.json`の`scripts`を参照）
 
 ## 開発環境構築

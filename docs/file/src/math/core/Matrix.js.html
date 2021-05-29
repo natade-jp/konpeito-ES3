@@ -38,7 +38,9 @@
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#math-core-tools">math/core/tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/LinearAlgebra.js~LinearAlgebra.html">LinearAlgebra</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/Probability.js~Probability.html">Probability</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/Random.js~Random.html">Random</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/Signal.js~Signal.html">Signal</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html">Statistics</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#math-tools">math/tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/tools/DataAnalysis.js~DataAnalysis.html">DataAnalysis</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#math-tools-dataanalysis">math/tools/DataAnalysis</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/tools/DataAnalysis/MultipleRegressionAnalysis.js~MultipleRegressionAnalysis.html">MultipleRegressionAnalysis</a></span></span></li>
@@ -67,10 +69,12 @@
  *  The MIT license https://opensource.org/licenses/MIT
  */
 
+import Polyfill from &quot;../tools/Polyfill.js&quot;;
 import LinearAlgebra from &quot;./tools/LinearAlgebra.js&quot;;
 import Statistics from &quot;./tools/Statistics.js&quot;;
-import Random from &quot;./tools/Random.js&quot;;
+import Signal from &quot;./tools/Signal.js&quot;;
 import Complex from &quot;./Complex.js&quot;;
+import Random from &quot;./tools/Random.js&quot;;
 
 /**
  * @param {any} obj 
@@ -4513,6 +4517,156 @@ export default class Matrix {
 		return Statistics.sort(this, order, type);
 	}
 
+	// &#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;
+	// signal &#x4FE1;&#x53F7;&#x51E6;&#x7406;&#x7528;
+	// &#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;&#x25C6;
+
+	/**
+	 * Discrete Fourier transform (DFT).
+	 * @param {KMatrixSettings} [type]
+	 * @returns {Matrix} fft(x)
+	 */
+	fft(type) {
+		return Signal.fft(this, type);
+	}
+
+	/**
+	 * Inverse discrete Fourier transform (IDFT).
+	 * @param {KMatrixSettings} [type]
+	 * @returns {Matrix} ifft(x)
+	 */
+	ifft(type) {
+		return Signal.ifft(this, type);
+	}
+
+	/**
+	 * Power spectral density.
+	 * @param {KMatrixSettings} [type]
+	 * @returns {Matrix} abs(fft(x)).^2
+	 */
+	powerfft(type) {
+		return Signal.powerfft(this, type);
+	}
+
+	/**
+	 * Discrete cosine transform (DCT-II, DCT).
+	 * @param {KMatrixSettings} [type]
+	 * @returns {Matrix} dct(x)
+	 */
+	dct(type) {
+		return Signal.dct(this, type);
+	}
+
+	/**
+	 * Inverse discrete cosine transform (DCT-III, IDCT).
+	 * @param {KMatrixSettings} [type]
+	 * @returns {Matrix} idct(x)
+	 */
+	idct(type) {
+		return Signal.idct(this, type);
+	}
+
+	/**
+	 * Discrete two-dimensional Fourier transform (2D DFT).
+	 * @returns {Matrix}
+	 */
+	fft2() {
+		return Signal.fft2(this);
+	}
+
+	/**
+	 * Inverse discrete two-dimensional Fourier transform (2D IDFT).
+	 * @returns {Matrix}
+	 */
+	ifft2() {
+		return Signal.ifft2(this);
+	}
+
+	/**
+	 * Discrete two-dimensional cosine transform (2D DCT).
+	 * @returns {Matrix}
+	 */
+	dct2() {
+		return Signal.dct2(this);
+	}
+
+	/**
+	 * Inverse discrete two-dimensional cosine transform (2D IDCT).
+	 * @returns {Matrix}
+	 */
+	idct2() {
+		return Signal.idct2(this);
+	}
+
+	/**
+	 * Convolution integral, Polynomial multiplication.
+	 * @param {KMatrixInputData} number
+	 * @returns {Matrix}
+	 */
+	conv(number) {
+		return Signal.conv(this, number);
+	}
+
+	/**
+	 * ACF(Autocorrelation function), cros-correlation function.
+	 * - If the argument is omitted, it is calculated by the autocorrelation function.
+	 * @param {KMatrixInputData} [number] - Matrix to calculate the correlation.
+	 * @returns {Matrix}
+	 */
+	xcorr(number) {
+		return Signal.xcorr(this, number);
+	}
+
+	/**
+	 * Create window function for signal processing.
+	 * The following window functions are available.
+	 * - &quot;rectangle&quot;: Rectangular window
+	 * - &quot;hann&quot;: Hann/Hanning window.
+	 * - &quot;hamming&quot;: Hamming window.
+	 * - &quot;blackman&quot;: Blackman window.
+	 * - &quot;blackmanharris&quot;: Blackman-Harris window.
+	 * - &quot;blackmannuttall&quot;: Blackman-Nuttall window.
+	 * - &quot;flattop&quot;: Flat top window.
+	 * - &quot;sin&quot;, Half cycle sine window.
+	 * - &quot;vorbis&quot;, Vorbis window.
+	 * @param {string} name - Window function name.
+	 * @param {KMatrixInputData} size - Window length
+	 * @param {string|number} [periodic=&quot;symmetric&quot;] - 0/&quot;symmetric&quot; (default) , 1/&quot;periodic&quot;
+	 * @returns {Matrix} Column vector.
+	 */
+	static window(name, size, periodic) {
+		return Signal.window(name, size, periodic);
+	}
+
+	/**
+	 * Hann (Hanning) window.
+	 * @param {KMatrixInputData} size - Window length
+	 * @param {string|number} [periodic=&quot;symmetric&quot;] - 0/&quot;symmetric&quot; (default) , 1/&quot;periodic&quot;
+	 * @returns {Matrix} Column vector.
+	 */
+	static hann(size, periodic) {
+		return Signal.hann(size, periodic);
+	}
+	
+	/**
+	 * Hamming window.
+	 * @param {KMatrixInputData} size - Window length
+	 * @param {string|number} [periodic=&quot;symmetric&quot;] - 0/&quot;symmetric&quot; (default) , 1/&quot;periodic&quot;
+	 * @returns {Matrix} Column vector.
+	 */
+	static hamming(size, periodic) {
+		return Signal.hamming(size, periodic);
+	}
+	
+	/**
+	 * FFT shift.
+	 * Circular shift beginning at the center of the signal.
+	 * @param {KMatrixSettings} [type]
+	 * @returns {Matrix}
+	 */
+	fftshift(type) {
+		return Signal.fftshift(this, type);
+	}
 	// ----------------------
 	// &#x4E92;&#x63DB;&#x6027;
 	// ----------------------

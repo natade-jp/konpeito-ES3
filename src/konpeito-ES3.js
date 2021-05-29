@@ -14,6 +14,7 @@ import typeMatrix from "./math/core/Matrix.js";
 import typeProbability from "./math/core/tools/Probability.js";
 import typeStatistics from "./math/core/tools/Statistics.js";
 import typeLinearAlgebra from "./math/core/tools/LinearAlgebra.js";
+import typeSignal from "./math/core/tools/Signal.js";
 import typeDataAnalysis from "./math/tools/DataAnalysis.js";
 
 /**
@@ -55,6 +56,12 @@ const konpeitoES3 = {
 
 	/**
 	 * DataAnalysis
+ 	 * @type {typeSignal}
+	 */
+	Signal : typeSignal,
+
+	/**
+	 * DataAnalysis
  	 * @type {typeDataAnalysis}
 	 */
 	DataAnalysis : typeDataAnalysis
@@ -92,6 +99,11 @@ if(!("Statistics" in global_var)) {
 if(!("LinearAlgebra" in global_var)) {
 	// @ts-ignore
 	LinearAlgebra = typeLinearAlgebra;
+}
+
+if(!("Signal" in global_var)) {
+	// @ts-ignore
+	Signal = typeSignal;
 }
 
 if(!("DataAnalysis" in global_var)) {

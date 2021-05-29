@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../../../">
-  <title data-ice="title">Statistics | konpeito_es3</title>
+  <title data-ice="title">Signal | konpeito_es3</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -59,17 +59,17 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import Statistics from &apos;<span><a href="file/src/math/core/tools/Statistics.js.html#lineNumber28">konpeito_es3/src/math/core/tools/Statistics.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import Signal from &apos;<span><a href="file/src/math/core/tools/Signal.js.html#lineNumber911">konpeito_es3/src/math/core/tools/Signal.js</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
   
   
-  <span data-ice="source">| <span><a href="file/src/math/core/tools/Statistics.js.html#lineNumber28">source</a></span></span>
+  <span data-ice="source">| <span><a href="file/src/math/core/tools/Signal.js.html#lineNumber911">source</a></span></span>
 </div>
 
 <div class="self-detail detail">
-  <h1 data-ice="name">Statistics</h1>
+  <h1 data-ice="name">Signal</h1>
 
   
 
@@ -85,7 +85,7 @@
 
   
   
-  <div class="description" data-ice="description"><p>Class for statistical processing for <code>Matrix</code> class.</p>
+  <div class="description" data-ice="description"><p>Signal processing class for <code>Matrix</code> class.</p>
 <ul>
 <li>These methods can be used in the <code>Matrix</code> method chain.</li>
 <li>This class cannot be called directly.</li>
@@ -121,13 +121,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html#static-method-corrcoef">corrcoef</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, y_or_type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span> | <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Signal.js~Signal.html#static-method-conv">conv</a></span></span><span class="code" data-ice="signature">(x1: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, x2: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Correlation matrix or Correlation coefficient.</p>
+        <div data-ice="description"><p>Convolution integral, Polynomial multiplication.</p>
 </div>
       </div>
     </td>
@@ -150,13 +150,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html#static-method-cov">cov</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, y_or_type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span> | <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Signal.js~Signal.html#static-method-dct">dct</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Covariance matrix or Covariance value.</p>
+        <div data-ice="description"><p>Discrete cosine transform (DCT-II, DCT).</p>
 </div>
       </div>
     </td>
@@ -179,13 +179,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html#static-method-geomean">geomean</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Signal.js~Signal.html#static-method-dct2">dct2</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Geometric mean.</p>
+        <div data-ice="description"><p>Discrete two-dimensional cosine transform (2D DCT).</p>
 </div>
       </div>
     </td>
@@ -208,13 +208,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html#static-method-mad">mad</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, algorithm: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | ?<span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Signal.js~Signal.html#static-method-fft">fft</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Mean absolute deviation.</p>
+        <div data-ice="description"><p>Discrete Fourier transform (DFT).</p>
 </div>
       </div>
     </td>
@@ -237,13 +237,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html#static-method-max">max</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Signal.js~Signal.html#static-method-fft2">fft2</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Maximum number.</p>
+        <div data-ice="description"><p>Discrete two-dimensional Fourier transform (2D DFT).</p>
 </div>
       </div>
     </td>
@@ -266,13 +266,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html#static-method-mean">mean</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Signal.js~Signal.html#static-method-fftshift">fftshift</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Arithmetic average.</p>
+        <div data-ice="description"><p>FFT shift.</p>
 </div>
       </div>
     </td>
@@ -295,13 +295,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html#static-method-median">median</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Signal.js~Signal.html#static-method-hamming">hamming</a></span></span><span class="code" data-ice="signature">(size: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, periodic: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Median.</p>
+        <div data-ice="description"><p>Hamming window.</p>
 </div>
       </div>
     </td>
@@ -324,13 +324,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html#static-method-min">min</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Signal.js~Signal.html#static-method-hann">hann</a></span></span><span class="code" data-ice="signature">(size: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, periodic: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Minimum number.</p>
+        <div data-ice="description"><p>Hann (Hanning) window.</p>
 </div>
       </div>
     </td>
@@ -353,13 +353,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html#static-method-mode">mode</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Signal.js~Signal.html#static-method-idct">idct</a></span></span><span class="code" data-ice="signature">(X: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Mode.</p>
+        <div data-ice="description"><p>Inverse discrete cosine transform (DCT-III, IDCT),</p>
 </div>
       </div>
     </td>
@@ -382,13 +382,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html#static-method-moment">moment</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, nth_order: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Signal.js~Signal.html#static-method-idct2">idct2</a></span></span><span class="code" data-ice="signature">(X: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Moment.</p>
+        <div data-ice="description"><p>Inverse discrete two-dimensional cosine transform (2D IDCT),</p>
 </div>
       </div>
     </td>
@@ -411,13 +411,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html#static-method-prod">prod</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Signal.js~Signal.html#static-method-ifft">ifft</a></span></span><span class="code" data-ice="signature">(X: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Product of array elements.</p>
+        <div data-ice="description"><p>Inverse discrete Fourier transform (IDFT),</p>
 </div>
       </div>
     </td>
@@ -440,13 +440,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html#static-method-skewness">skewness</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Signal.js~Signal.html#static-method-ifft2">ifft2</a></span></span><span class="code" data-ice="signature">(X: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Skewness.</p>
+        <div data-ice="description"><p>Inverse discrete two-dimensional Fourier transform (2D IDFT),</p>
 </div>
       </div>
     </td>
@@ -469,13 +469,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html#static-method-sort">sort</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, order: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Signal.js~Signal.html#static-method-powerfft">powerfft</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Sort.</p>
+        <div data-ice="description"><p>Power spectral density.</p>
 </div>
       </div>
     </td>
@@ -498,13 +498,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html#static-method-standardization">standardization</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Signal.js~Signal.html#static-method-window">window</a></span></span><span class="code" data-ice="signature">(name: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, size: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, periodic: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>The samples are standardize to a mean value of 0, standard deviation of 1.</p>
+        <div data-ice="description"><p>Create window function for signal processing.</p>
 </div>
       </div>
     </td>
@@ -527,71 +527,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html#static-method-std">std</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Signal.js~Signal.html#static-method-xcorr">xcorr</a></span></span><span class="code" data-ice="signature">(x1: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, x2: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>Standard deviation.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      <span data-ice="static">static</span>
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html#static-method-sum">sum</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Sum.</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      <span data-ice="static">static</span>
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html#static-method-variance">variance</a></span></span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>Variance.</p>
+        <div data-ice="description"><p>ACF(Autocorrelation function), cros-correlation function.</p>
 </div>
       </div>
     </td>
@@ -613,29 +555,103 @@
 <div data-ice="staticMethodDetails"><h2 data-ice="title">Static Public Methods</h2>
 
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-corrcoef">
+  <h3 data-ice="anchor" id="static-method-conv">
     <span class="access" data-ice="access">public</span>
     <span data-ice="static">static</span>
     
     
     
     
-    <span class="code" data-ice="name">corrcoef</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, y_or_type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span> | <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="code" data-ice="name">conv</span><span class="code" data-ice="signature">(x1: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, x2: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/tools/Statistics.js.html#lineNumber516">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/tools/Signal.js.html#lineNumber1107">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Correlation matrix or Correlation coefficient.</p>
-<ul>
-<li>Get a correlation matrix from 1 matrix.</li>
-<li>Get a correlation coefficient from 2 vectors.</li>
-</ul>
+  <div data-ice="description"><p>Convolution integral, Polynomial multiplication.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">x1</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">x2</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-method-dct">
+    <span class="access" data-ice="access">public</span>
+    <span data-ice="static">static</span>
+    
+    
+    
+    
+    <span class="code" data-ice="name">dct</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/tools/Signal.js.html#lineNumber1009">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Discrete cosine transform (DCT-II, DCT).</p>
 </div>
 
   
@@ -655,14 +671,311 @@
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">y_or_type</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span> | <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
+      <td data-ice="name" class="code" data-depth="0">type</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span></td>
       <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>dct(x)</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-method-dct2">
+    <span class="access" data-ice="access">public</span>
+    <span data-ice="static">static</span>
+    
+    
+    
+    
+    <span class="code" data-ice="name">dct2</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/tools/Signal.js.html#lineNumber1088">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Discrete two-dimensional cosine transform (2D DCT).</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">x</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-method-fft">
+    <span class="access" data-ice="access">public</span>
+    <span data-ice="static">static</span>
+    
+    
+    
+    
+    <span class="code" data-ice="name">fft</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/tools/Signal.js.html#lineNumber919">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Discrete Fourier transform (DFT).</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">x</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
+      <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">type</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>fft(x)</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-method-fft2">
+    <span class="access" data-ice="access">public</span>
+    <span data-ice="static">static</span>
+    
+    
+    
+    
+    <span class="code" data-ice="name">fft2</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/tools/Signal.js.html#lineNumber1070">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Discrete two-dimensional Fourier transform (2D DFT).</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">x</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-method-fftshift">
+    <span class="access" data-ice="access">public</span>
+    <span data-ice="static">static</span>
+    
+    
+    
+    
+    <span class="code" data-ice="name">fftshift</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/tools/Signal.js.html#lineNumber1253">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>FFT shift.
+Circular shift beginning at the center of the signal.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">x</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">type</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span></td>
       <td data-ice="appendix"><ul><li>optional</li></ul></td>
       <td data-ice="description"></td>
     </tr>
@@ -701,29 +1014,25 @@
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-cov">
+  <h3 data-ice="anchor" id="static-method-hamming">
     <span class="access" data-ice="access">public</span>
     <span data-ice="static">static</span>
     
     
     
     
-    <span class="code" data-ice="name">cov</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, y_or_type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span> | <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="code" data-ice="name">hamming</span><span class="code" data-ice="signature">(size: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, periodic: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/tools/Statistics.js.html#lineNumber425">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/tools/Signal.js.html#lineNumber1242">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Covariance matrix or Covariance value.</p>
-<ul>
-<li>Get a variance-covariance matrix from 1 matrix.</li>
-<li>Get a covariance from 2 vectors.</li>
-</ul>
+  <div data-ice="description"><p>Hamming window.</p>
 </div>
 
   
@@ -737,188 +1046,19 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">x</td>
+      <td data-ice="name" class="code" data-depth="0">size</td>
       <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
+      <td data-ice="description"><p>Window length</p>
+</td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">y_or_type</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span> | <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li></ul></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">type</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li></ul></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-geomean">
-    <span class="access" data-ice="access">public</span>
-    <span data-ice="static">static</span>
-    
-    
-    
-    
-    <span class="code" data-ice="name">geomean</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/math/core/tools/Statistics.js.html#lineNumber165">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Geometric mean.</p>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">x</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">type</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li></ul></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-mad">
-    <span class="access" data-ice="access">public</span>
-    <span data-ice="static">static</span>
-    
-    
-    
-    
-    <span class="code" data-ice="name">mad</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, algorithm: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | ?<span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/math/core/tools/Statistics.js.html#lineNumber380">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Mean absolute deviation.</p>
-<ul>
-<li>The &quot;algorithm&quot; can choose &quot;0/mean&quot;(default) and &quot;1/median&quot;.</li>
-</ul>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">x</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">algorithm</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | ?<span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
+      <td data-ice="name" class="code" data-depth="0">periodic</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
       <td data-ice="appendix"><ul><li>optional</li>
-<li>nullable: true</li></ul></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">type</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li></ul></td>
-      <td data-ice="description"></td>
+<li>default: &quot;symmetric&quot;</li></ul></td>
+      <td data-ice="description"><p>0/&quot;symmetric&quot; (default) , 1/&quot;periodic&quot;</p>
+</td>
     </tr>
 </tbody>
   </table>
@@ -931,85 +1071,7 @@
       <tbody>
         <tr>
           <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-max">
-    <span class="access" data-ice="access">public</span>
-    <span data-ice="static">static</span>
-    
-    
-    
-    
-    <span class="code" data-ice="name">max</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/math/core/tools/Statistics.js.html#lineNumber36">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Maximum number.</p>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">x</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">type</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li></ul></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
-          <td class="return-desc" data-ice="returnDescription"><p>max([A, B])</p>
+          <td class="return-desc" data-ice="returnDescription"><p>Column vector.</p>
 </td>
         </tr>
       </tbody>
@@ -1034,25 +1096,25 @@
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-mean">
+  <h3 data-ice="anchor" id="static-method-hann">
     <span class="access" data-ice="access">public</span>
     <span data-ice="static">static</span>
     
     
     
     
-    <span class="code" data-ice="name">mean</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="code" data-ice="name">hann</span><span class="code" data-ice="signature">(size: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, periodic: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/tools/Statistics.js.html#lineNumber114">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/tools/Signal.js.html#lineNumber1232">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Arithmetic average.</p>
+  <div data-ice="description"><p>Hann (Hanning) window.</p>
 </div>
 
   
@@ -1066,16 +1128,19 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">x</td>
+      <td data-ice="name" class="code" data-depth="0">size</td>
       <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
       <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
+      <td data-ice="description"><p>Window length</p>
+</td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">type</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li></ul></td>
-      <td data-ice="description"></td>
+      <td data-ice="name" class="code" data-depth="0">periodic</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: &quot;symmetric&quot;</li></ul></td>
+      <td data-ice="description"><p>0/&quot;symmetric&quot; (default) , 1/&quot;periodic&quot;</p>
+</td>
     </tr>
 </tbody>
   </table>
@@ -1088,163 +1153,7 @@
       <tbody>
         <tr>
           <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-median">
-    <span class="access" data-ice="access">public</span>
-    <span data-ice="static">static</span>
-    
-    
-    
-    
-    <span class="code" data-ice="name">median</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/math/core/tools/Statistics.js.html#lineNumber188">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Median.</p>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">x</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">type</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li></ul></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-min">
-    <span class="access" data-ice="access">public</span>
-    <span data-ice="static">static</span>
-    
-    
-    
-    
-    <span class="code" data-ice="name">min</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/math/core/tools/Statistics.js.html#lineNumber61">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Minimum number.</p>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">x</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">type</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li></ul></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
-          <td class="return-desc" data-ice="returnDescription"><p>min([A, B])</p>
+          <td class="return-desc" data-ice="returnDescription"><p>Column vector.</p>
 </td>
         </tr>
       </tbody>
@@ -1269,25 +1178,25 @@
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-mode">
+  <h3 data-ice="anchor" id="static-method-idct">
     <span class="access" data-ice="access">public</span>
     <span data-ice="static">static</span>
     
     
     
     
-    <span class="code" data-ice="name">mode</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="code" data-ice="name">idct</span><span class="code" data-ice="signature">(X: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/tools/Statistics.js.html#lineNumber225">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/tools/Signal.js.html#lineNumber1040">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Mode.</p>
+  <div data-ice="description"><p>Inverse discrete cosine transform (DCT-III, IDCT),</p>
 </div>
 
   
@@ -1301,15 +1210,88 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">x</td>
+      <td data-ice="name" class="code" data-depth="0">X</td>
       <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">type</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span></td>
       <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>idct(x)</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-method-idct2">
+    <span class="access" data-ice="access">public</span>
+    <span data-ice="static">static</span>
+    
+    
+    
+    
+    <span class="code" data-ice="name">idct2</span><span class="code" data-ice="signature">(X: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/tools/Signal.js.html#lineNumber1097">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Inverse discrete two-dimensional cosine transform (2D IDCT),</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">X</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
+      <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 </tbody>
@@ -1347,27 +1329,266 @@
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-moment">
+  <h3 data-ice="anchor" id="static-method-ifft">
     <span class="access" data-ice="access">public</span>
     <span data-ice="static">static</span>
     
     
     
     
-    <span class="code" data-ice="name">moment</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, nth_order: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="code" data-ice="name">ifft</span><span class="code" data-ice="signature">(X: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/tools/Statistics.js.html#lineNumber280">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/tools/Signal.js.html#lineNumber949">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>Moment.</p>
+  <div data-ice="description"><p>Inverse discrete Fourier transform (IDFT),</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">X</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">type</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>ifft(X)</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-method-ifft2">
+    <span class="access" data-ice="access">public</span>
+    <span data-ice="static">static</span>
+    
+    
+    
+    
+    <span class="code" data-ice="name">ifft2</span><span class="code" data-ice="signature">(X: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/tools/Signal.js.html#lineNumber1079">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Inverse discrete two-dimensional Fourier transform (2D IDFT),</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">X</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-method-powerfft">
+    <span class="access" data-ice="access">public</span>
+    <span data-ice="static">static</span>
+    
+    
+    
+    
+    <span class="code" data-ice="name">powerfft</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/tools/Signal.js.html#lineNumber979">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Power spectral density.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">x</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">type</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>abs(fft(x)).^2</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-method-window">
+    <span class="access" data-ice="access">public</span>
+    <span data-ice="static">static</span>
+    
+    
+    
+    
+    <span class="code" data-ice="name">window</span><span class="code" data-ice="signature">(name: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, size: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, periodic: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/tools/Signal.js.html#lineNumber1220">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Create window function for signal processing.
+The following window functions are available.</p>
 <ul>
-<li>Moment of order n. Equivalent to the definition of variance at 2.</li>
+<li>&quot;rectangle&quot;: Rectangular window</li>
+<li>&quot;hann&quot;: Hann/Hanning window.</li>
+<li>&quot;hamming&quot;: Hamming window.</li>
+<li>&quot;blackman&quot;: Blackman window.</li>
+<li>&quot;blackmanharris&quot;: Blackman-Harris window.</li>
+<li>&quot;blackmannuttall&quot;: Blackman-Nuttall window.</li>
+<li>&quot;flattop&quot;: Flat top window.</li>
+<li>&quot;sin&quot;, Half cycle sine window.</li>
+<li>&quot;vorbis&quot;, Vorbis window.</li>
 </ul>
 </div>
 
@@ -1382,265 +1603,26 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">x</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">nth_order</td>
-      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">type</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li></ul></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-prod">
-    <span class="access" data-ice="access">public</span>
-    <span data-ice="static">static</span>
-    
-    
-    
-    
-    <span class="code" data-ice="name">prod</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/math/core/tools/Statistics.js.html#lineNumber142">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Product of array elements.</p>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">x</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">type</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li></ul></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-skewness">
-    <span class="access" data-ice="access">public</span>
-    <span data-ice="static">static</span>
-    
-    
-    
-    
-    <span class="code" data-ice="name">skewness</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/math/core/tools/Statistics.js.html#lineNumber401">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Skewness.</p>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">x</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">type</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li></ul></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-sort">
-    <span class="access" data-ice="access">public</span>
-    <span data-ice="static">static</span>
-    
-    
-    
-    
-    <span class="code" data-ice="name">sort</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, order: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/math/core/tools/Statistics.js.html#lineNumber557">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Sort.</p>
-<ul>
-<li>The &quot;order&quot; can choose &quot;ascend&quot;(default) and &quot;descend&quot;.</li>
-</ul>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">x</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">order</td>
+      <td data-ice="name" class="code" data-depth="0">name</td>
       <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li></ul></td>
-      <td data-ice="description"></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Window function name.</p>
+</td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">type</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li></ul></td>
-      <td data-ice="description"></td>
+      <td data-ice="name" class="code" data-depth="0">size</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Window length</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">periodic</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: &quot;symmetric&quot;</li></ul></td>
+      <td data-ice="description"><p>0/&quot;symmetric&quot; (default) , 1/&quot;periodic&quot;</p>
+</td>
     </tr>
 </tbody>
   </table>
@@ -1653,7 +1635,8 @@
       <tbody>
         <tr>
           <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
-          
+          <td class="return-desc" data-ice="returnDescription"><p>Column vector.</p>
+</td>
         </tr>
       </tbody>
     </table>
@@ -1677,25 +1660,28 @@
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-standardization">
+  <h3 data-ice="anchor" id="static-method-xcorr">
     <span class="access" data-ice="access">public</span>
     <span data-ice="static">static</span>
     
     
     
     
-    <span class="code" data-ice="name">standardization</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="code" data-ice="name">xcorr</span><span class="code" data-ice="signature">(x1: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, x2: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/tools/Statistics.js.html#lineNumber500">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/tools/Signal.js.html#lineNumber1157">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>The samples are standardize to a mean value of 0, standard deviation of 1.</p>
+  <div data-ice="description"><p>ACF(Autocorrelation function), cros-correlation function.</p>
+<ul>
+<li>If the argument is omitted, it is calculated by the autocorrelation function.</li>
+</ul>
 </div>
 
   
@@ -1709,250 +1695,17 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">x</td>
+      <td data-ice="name" class="code" data-depth="0">x1</td>
       <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">type</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li></ul></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-std">
-    <span class="access" data-ice="access">public</span>
-    <span data-ice="static">static</span>
-    
-    
-    
-    
-    <span class="code" data-ice="name">std</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/math/core/tools/Statistics.js.html#lineNumber360">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Standard deviation.</p>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">x</td>
+      <td data-ice="name" class="code" data-depth="0">x2</td>
       <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">type</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></td>
       <td data-ice="appendix"><ul><li>optional</li></ul></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-sum">
-    <span class="access" data-ice="access">public</span>
-    <span data-ice="static">static</span>
-    
-    
-    
-    
-    <span class="code" data-ice="name">sum</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/math/core/tools/Statistics.js.html#lineNumber86">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Sum.</p>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">x</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">type</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li></ul></td>
-      <td data-ice="description"></td>
-    </tr>
-</tbody>
-  </table>
-</div>
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="static-method-variance">
-    <span class="access" data-ice="access">public</span>
-    <span data-ice="static">static</span>
-    
-    
-    
-    
-    <span class="code" data-ice="name">variance</span><span class="code" data-ice="signature">(x: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/math/core/tools/Statistics.js.html#lineNumber326">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>Variance.</p>
-</div>
-
-  
-
-  <div data-ice="properties"><div data-ice="properties">
-  <h4 data-ice="title">Params:</h4>
-  <table class="params">
-    <thead>
-    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-    
-    <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">x</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
-      <td data-ice="appendix"></td>
-      <td data-ice="description"></td>
-    </tr>
-<tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">type</td>
-      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></td>
-      <td data-ice="appendix"><ul><li>optional</li></ul></td>
-      <td data-ice="description"></td>
+      <td data-ice="description"><p>Matrix to calculate the correlation.</p>
+</td>
     </tr>
 </tbody>
   </table>

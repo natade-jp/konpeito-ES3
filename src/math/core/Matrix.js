@@ -8,10 +8,12 @@
  *  The MIT license https://opensource.org/licenses/MIT
  */
 
+import Polyfill from "../tools/Polyfill.js";
 import LinearAlgebra from "./tools/LinearAlgebra.js";
 import Statistics from "./tools/Statistics.js";
-import Random from "./tools/Random.js";
+import Signal from "./tools/Signal.js";
 import Complex from "./Complex.js";
+import Random from "./tools/Random.js";
 
 /**
  * @param {any} obj 
@@ -4454,6 +4456,156 @@ export default class Matrix {
 		return Statistics.sort(this, order, type);
 	}
 
+	// ◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆
+	// signal 信号処理用
+	// ◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆◆
+
+	/**
+	 * Discrete Fourier transform (DFT).
+	 * @param {KMatrixSettings} [type]
+	 * @returns {Matrix} fft(x)
+	 */
+	fft(type) {
+		return Signal.fft(this, type);
+	}
+
+	/**
+	 * Inverse discrete Fourier transform (IDFT).
+	 * @param {KMatrixSettings} [type]
+	 * @returns {Matrix} ifft(x)
+	 */
+	ifft(type) {
+		return Signal.ifft(this, type);
+	}
+
+	/**
+	 * Power spectral density.
+	 * @param {KMatrixSettings} [type]
+	 * @returns {Matrix} abs(fft(x)).^2
+	 */
+	powerfft(type) {
+		return Signal.powerfft(this, type);
+	}
+
+	/**
+	 * Discrete cosine transform (DCT-II, DCT).
+	 * @param {KMatrixSettings} [type]
+	 * @returns {Matrix} dct(x)
+	 */
+	dct(type) {
+		return Signal.dct(this, type);
+	}
+
+	/**
+	 * Inverse discrete cosine transform (DCT-III, IDCT).
+	 * @param {KMatrixSettings} [type]
+	 * @returns {Matrix} idct(x)
+	 */
+	idct(type) {
+		return Signal.idct(this, type);
+	}
+
+	/**
+	 * Discrete two-dimensional Fourier transform (2D DFT).
+	 * @returns {Matrix}
+	 */
+	fft2() {
+		return Signal.fft2(this);
+	}
+
+	/**
+	 * Inverse discrete two-dimensional Fourier transform (2D IDFT).
+	 * @returns {Matrix}
+	 */
+	ifft2() {
+		return Signal.ifft2(this);
+	}
+
+	/**
+	 * Discrete two-dimensional cosine transform (2D DCT).
+	 * @returns {Matrix}
+	 */
+	dct2() {
+		return Signal.dct2(this);
+	}
+
+	/**
+	 * Inverse discrete two-dimensional cosine transform (2D IDCT).
+	 * @returns {Matrix}
+	 */
+	idct2() {
+		return Signal.idct2(this);
+	}
+
+	/**
+	 * Convolution integral, Polynomial multiplication.
+	 * @param {KMatrixInputData} number
+	 * @returns {Matrix}
+	 */
+	conv(number) {
+		return Signal.conv(this, number);
+	}
+
+	/**
+	 * ACF(Autocorrelation function), cros-correlation function.
+	 * - If the argument is omitted, it is calculated by the autocorrelation function.
+	 * @param {KMatrixInputData} [number] - Matrix to calculate the correlation.
+	 * @returns {Matrix}
+	 */
+	xcorr(number) {
+		return Signal.xcorr(this, number);
+	}
+
+	/**
+	 * Create window function for signal processing.
+	 * The following window functions are available.
+	 * - "rectangle": Rectangular window
+	 * - "hann": Hann/Hanning window.
+	 * - "hamming": Hamming window.
+	 * - "blackman": Blackman window.
+	 * - "blackmanharris": Blackman-Harris window.
+	 * - "blackmannuttall": Blackman-Nuttall window.
+	 * - "flattop": Flat top window.
+	 * - "sin", Half cycle sine window.
+	 * - "vorbis", Vorbis window.
+	 * @param {string} name - Window function name.
+	 * @param {KMatrixInputData} size - Window length
+	 * @param {string|number} [periodic="symmetric"] - 0/"symmetric" (default) , 1/"periodic"
+	 * @returns {Matrix} Column vector.
+	 */
+	static window(name, size, periodic) {
+		return Signal.window(name, size, periodic);
+	}
+
+	/**
+	 * Hann (Hanning) window.
+	 * @param {KMatrixInputData} size - Window length
+	 * @param {string|number} [periodic="symmetric"] - 0/"symmetric" (default) , 1/"periodic"
+	 * @returns {Matrix} Column vector.
+	 */
+	static hann(size, periodic) {
+		return Signal.hann(size, periodic);
+	}
+	
+	/**
+	 * Hamming window.
+	 * @param {KMatrixInputData} size - Window length
+	 * @param {string|number} [periodic="symmetric"] - 0/"symmetric" (default) , 1/"periodic"
+	 * @returns {Matrix} Column vector.
+	 */
+	static hamming(size, periodic) {
+		return Signal.hamming(size, periodic);
+	}
+	
+	/**
+	 * FFT shift.
+	 * Circular shift beginning at the center of the signal.
+	 * @param {KMatrixSettings} [type]
+	 * @returns {Matrix}
+	 */
+	fftshift(type) {
+		return Signal.fftshift(this, type);
+	}
 	// ----------------------
 	// 互換性
 	// ----------------------

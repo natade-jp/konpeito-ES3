@@ -38,7 +38,9 @@
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#math-core-tools">math/core/tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/LinearAlgebra.js~LinearAlgebra.html">LinearAlgebra</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/Probability.js~Probability.html">Probability</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/Random.js~Random.html">Random</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/Signal.js~Signal.html">Signal</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html">Statistics</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#math-tools">math/tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/tools/DataAnalysis.js~DataAnalysis.html">DataAnalysis</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#math-tools-dataanalysis">math/tools/DataAnalysis</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/tools/DataAnalysis/MultipleRegressionAnalysis.js~MultipleRegressionAnalysis.html">MultipleRegressionAnalysis</a></span></span></li>
@@ -174,18 +176,6 @@ export default class MultipleRegressionAnalysis {
 
 		// &#x5171;&#x5206;&#x6563;&#x884C;&#x5217;
 		const S = samples.cov(set_unbiased);
-
-		console.log(&quot;settings.samples&quot;)
-		console.log(settings.samples)
-		console.log(&quot;settings.target&quot;)
-		console.log(settings.target)
-
-		console.log(&quot;samples&quot;)
-		console.log(samples)
-
-		console.log(&quot;S&quot;)
-		console.log(S)
-
 		const S_rcond = S.rcond();
 		// &#x3069;&#x3053;&#x304B;&#x306E;&#x5024;&#x306B;&#x76F8;&#x95A2;&#x304C;&#x975E;&#x5E38;&#x306B;&#x9AD8;&#x3044;&#x3082;&#x306E;&#x304C;&#x3042;&#x308A;&#x8A08;&#x7B97;&#x3067;&#x304D;&#x306A;&#x3044;&#x3002;
 		if(S_rcond &lt;= 1e-10) {
@@ -203,58 +193,16 @@ export default class MultipleRegressionAnalysis {
 
 		// &#x504F;&#x56DE;&#x5E30;&#x4FC2;&#x6570;(&#x7E26;&#x30D9;&#x30AF;&#x30C8;&#x30EB;) partial regression coefficient. (column vector)
 		const partial_regression_coefficient =  S.inv().mul(Y);
-
-
-		console.log(&quot;partial_regression_coefficient&quot;)
-		console.log(partial_regression_coefficient)
-
-
 		// &#x30D0;&#x30A4;&#x30A2;&#x30B9;&#x30FB;&#x5B9A;&#x6570;&#x9805;&#x30FB;&#x5207;&#x7247; bias
 		const bias = target.mean().sub(samples.mean().mul(partial_regression_coefficient));
-
-
-		console.log(&quot;bias&quot;)
-		console.log(bias)
-
-
-
 		// &#x4E88;&#x6E2C;&#x5024;(&#x7E26;&#x30D9;&#x30AF;&#x30C8;&#x30EB;) predicted values. (column vector)
 		const predicted_values = samples.mul(partial_regression_coefficient).add(bias);
-
-
-		console.log(&quot;predicted_values&quot;)
-		console.log(predicted_values)
-
-
-
-
 		// &#x76EE;&#x7684;&#x5909;&#x91CF;&#x306E;&#x4E88;&#x6E2C;&#x5024;&#x306E;&#x5206;&#x6563;
 		const sY = predicted_values.variance(set_unbiased);
-
-		console.log(&quot;sY&quot;)
-		console.log(sY)
-
-
-
-
 		// &#x76EE;&#x7684;&#x5909;&#x91CF;&#x306E;&#x5B9F;&#x6E2C;&#x5024;&#x306E;&#x5206;&#x6563;
 		const sy = target.variance(set_unbiased);
-
-
-		
-		console.log(&quot;sy&quot;)
-		console.log(sy)
-
-
-
 		// &#x91CD;&#x76F8;&#x95A2;&#x4FC2;&#x6570;
 		const multiple_R = predicted_values.corrcoef(target, set_unbiased);
-
-		console.log(&quot;multiple_R&quot;)
-		console.log(multiple_R)
-
-
-
 		// &#x6C7A;&#x5B9A;&#x4FC2;&#x6570;&#x30FB;&#x5BC4;&#x4E0E;&#x7387;
 		const R_square = sY.div(sy);
 

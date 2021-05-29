@@ -8,6 +8,7 @@
  *  The MIT license https://opensource.org/licenses/MIT
  */
 
+import Polyfill from "../tools/Polyfill.js";
 import Probability from "./tools/Probability.js";
 import Random from "./tools/Random.js";
 

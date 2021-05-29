@@ -2600,6 +2600,108 @@ declare class Matrix {
      */
     sort(order?: string, type?: KMatrixSettings): Matrix;
     /**
+     * Discrete Fourier transform (DFT).
+     * @param {KMatrixSettings} [type]
+     * @returns {Matrix} fft(x)
+     */
+    fft(type?: KMatrixSettings): Matrix;
+    /**
+     * Inverse discrete Fourier transform (IDFT).
+     * @param {KMatrixSettings} [type]
+     * @returns {Matrix} ifft(x)
+     */
+    ifft(type?: KMatrixSettings): Matrix;
+    /**
+     * Power spectral density.
+     * @param {KMatrixSettings} [type]
+     * @returns {Matrix} abs(fft(x)).^2
+     */
+    powerfft(type?: KMatrixSettings): Matrix;
+    /**
+     * Discrete cosine transform (DCT-II, DCT).
+     * @param {KMatrixSettings} [type]
+     * @returns {Matrix} dct(x)
+     */
+    dct(type?: KMatrixSettings): Matrix;
+    /**
+     * Inverse discrete cosine transform (DCT-III, IDCT).
+     * @param {KMatrixSettings} [type]
+     * @returns {Matrix} idct(x)
+     */
+    idct(type?: KMatrixSettings): Matrix;
+    /**
+     * Discrete two-dimensional Fourier transform (2D DFT).
+     * @returns {Matrix}
+     */
+    fft2(): Matrix;
+    /**
+     * Inverse discrete two-dimensional Fourier transform (2D IDFT).
+     * @returns {Matrix}
+     */
+    ifft2(): Matrix;
+    /**
+     * Discrete two-dimensional cosine transform (2D DCT).
+     * @returns {Matrix}
+     */
+    dct2(): Matrix;
+    /**
+     * Inverse discrete two-dimensional cosine transform (2D IDCT).
+     * @returns {Matrix}
+     */
+    idct2(): Matrix;
+    /**
+     * Convolution integral, Polynomial multiplication.
+     * @param {KMatrixInputData} number
+     * @returns {Matrix}
+     */
+    conv(number: KMatrixInputData): Matrix;
+    /**
+     * ACF(Autocorrelation function), cros-correlation function.
+     * - If the argument is omitted, it is calculated by the autocorrelation function.
+     * @param {KMatrixInputData} [number] - Matrix to calculate the correlation.
+     * @returns {Matrix}
+     */
+    xcorr(number?: KMatrixInputData): Matrix;
+    /**
+     * Create window function for signal processing.
+     * The following window functions are available.
+     * - "rectangle": Rectangular window
+     * - "hann": Hann/Hanning window.
+     * - "hamming": Hamming window.
+     * - "blackman": Blackman window.
+     * - "blackmanharris": Blackman-Harris window.
+     * - "blackmannuttall": Blackman-Nuttall window.
+     * - "flattop": Flat top window.
+     * - "sin", Half cycle sine window.
+     * - "vorbis", Vorbis window.
+     * @param {string} name - Window function name.
+     * @param {KMatrixInputData} size - Window length
+     * @param {string|number} [periodic="symmetric"] - 0/"symmetric" (default) , 1/"periodic"
+     * @returns {Matrix} Column vector.
+     */
+    static window(name: string, size: KMatrixInputData, periodic?: string | number): Matrix;
+    /**
+     * Hann (Hanning) window.
+     * @param {KMatrixInputData} size - Window length
+     * @param {string|number} [periodic="symmetric"] - 0/"symmetric" (default) , 1/"periodic"
+     * @returns {Matrix} Column vector.
+     */
+    static hann(size: KMatrixInputData, periodic?: string | number): Matrix;
+    /**
+     * Hamming window.
+     * @param {KMatrixInputData} size - Window length
+     * @param {string|number} [periodic="symmetric"] - 0/"symmetric" (default) , 1/"periodic"
+     * @returns {Matrix} Column vector.
+     */
+    static hamming(size: KMatrixInputData, periodic?: string | number): Matrix;
+    /**
+     * FFT shift.
+     * Circular shift beginning at the center of the signal.
+     * @param {KMatrixSettings} [type]
+     * @returns {Matrix}
+     */
+    fftshift(type?: KMatrixSettings): Matrix;
+    /**
      * The positive or negative sign of this number.
      * - +1 if positive, -1 if negative, 0 if 0.
      * @returns {Matrix}
@@ -3248,6 +3350,138 @@ declare class Random {
      * @returns {number}
      */
     nextGaussian(): number;
+}
+
+/**
+ * Collection of calculation settings for matrix.
+ * - Available options vary depending on the method.
+ * @typedef {Object} KSignalSettings
+ * @property {?string|?number} [dimension="auto"] Calculation direction. 0/"auto", 1/"row", 2/"column", 3/"both".
+ */
+declare type KSignalSettings = {
+    dimension?: string | number;
+};
+
+/**
+ * Signal processing class for `Matrix` class.
+ * - These methods can be used in the `Matrix` method chain.
+ * - This class cannot be called directly.
+ */
+declare class Signal {
+    /**
+     * Discrete Fourier transform (DFT).
+     * @param {KMatrixInputData} x
+     * @param {KSignalSettings} [type]
+     * @returns {Matrix} fft(x)
+     */
+    static fft(x: any, type?: KSignalSettings): Matrix;
+    /**
+     * Inverse discrete Fourier transform (IDFT),
+     * @param {KMatrixInputData} X
+     * @param {KSignalSettings} [type]
+     * @returns {Matrix} ifft(X)
+     */
+    static ifft(X: any, type?: KSignalSettings): Matrix;
+    /**
+     * Power spectral density.
+     * @param {KMatrixInputData} x
+     * @param {KSignalSettings} [type]
+     * @returns {Matrix} abs(fft(x)).^2
+     */
+    static powerfft(x: any, type?: KSignalSettings): Matrix;
+    /**
+     * Discrete cosine transform (DCT-II, DCT).
+     * @param {KMatrixInputData} x
+     * @param {KSignalSettings} [type]
+     * @returns {Matrix} dct(x)
+     */
+    static dct(x: any, type?: KSignalSettings): Matrix;
+    /**
+     * Inverse discrete cosine transform (DCT-III, IDCT),
+     * @param {KMatrixInputData} X
+     * @param {KSignalSettings} [type]
+     * @returns {Matrix} idct(x)
+     */
+    static idct(X: any, type?: KSignalSettings): Matrix;
+    /**
+     * Discrete two-dimensional Fourier transform (2D DFT).
+     * @param {KMatrixInputData} x
+     * @returns {Matrix}
+     */
+    static fft2(x: any): Matrix;
+    /**
+     * Inverse discrete two-dimensional Fourier transform (2D IDFT),
+     * @param {KMatrixInputData} X
+     * @returns {Matrix}
+     */
+    static ifft2(X: any): Matrix;
+    /**
+     * Discrete two-dimensional cosine transform (2D DCT).
+     * @param {KMatrixInputData} x
+     * @returns {Matrix}
+     */
+    static dct2(x: any): Matrix;
+    /**
+     * Inverse discrete two-dimensional cosine transform (2D IDCT),
+     * @param {KMatrixInputData} X
+     * @returns {Matrix}
+     */
+    static idct2(X: any): Matrix;
+    /**
+     * Convolution integral, Polynomial multiplication.
+     * @param {KMatrixInputData} x1
+     * @param {KMatrixInputData} x2
+     * @returns {Matrix}
+     */
+    static conv(x1: any, x2: any): Matrix;
+    /**
+     * ACF(Autocorrelation function), cros-correlation function.
+     * - If the argument is omitted, it is calculated by the autocorrelation function.
+     * @param {KMatrixInputData} x1
+     * @param {KMatrixInputData} [x2] - Matrix to calculate the correlation.
+     * @returns {Matrix}
+     */
+    static xcorr(x1: any, x2: any): Matrix;
+    /**
+     * Create window function for signal processing.
+     * The following window functions are available.
+     * - "rectangle": Rectangular window
+     * - "hann": Hann/Hanning window.
+     * - "hamming": Hamming window.
+     * - "blackman": Blackman window.
+     * - "blackmanharris": Blackman-Harris window.
+     * - "blackmannuttall": Blackman-Nuttall window.
+     * - "flattop": Flat top window.
+     * - "sin", Half cycle sine window.
+     * - "vorbis", Vorbis window.
+     * @param {string} name - Window function name.
+     * @param {KMatrixInputData} size - Window length
+     * @param {string|number} [periodic="symmetric"] - 0/"symmetric" (default) , 1/"periodic"
+     * @returns {Matrix} Column vector.
+     */
+    static window(name: string, size: any, periodic?: string | number): Matrix;
+    /**
+     * Hann (Hanning) window.
+     * @param {KMatrixInputData} size - Window length
+     * @param {string|number} [periodic="symmetric"] - 0/"symmetric" (default) , 1/"periodic"
+     * @returns {Matrix} Column vector.
+     */
+    static hann(size: any, periodic?: string | number): Matrix;
+    /**
+     * Hamming window.
+     * @param {KMatrixInputData} size - Window length
+     * @param {string|number} [periodic="symmetric"] - 0/"symmetric" (default) , 1/"periodic"
+     * @returns {Matrix} Column vector.
+     */
+    static hamming(size: any, periodic?: string | number): Matrix;
+    /**
+     * FFT shift.
+     * Circular shift beginning at the center of the signal.
+     * @param {KMatrixInputData} x
+     * @param {KSignalSettings} [type]
+     * @returns {Matrix}
+     */
+    static fftshift(x: any, type?: KSignalSettings): Matrix;
 }
 
 /**

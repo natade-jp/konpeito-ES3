@@ -1,7 +1,7 @@
 {
   "coverage": "100%",
-  "expectCount": 556,
-  "actualCount": 556,
+  "expectCount": 630,
+  "actualCount": 630,
   "files": {
     "src/konpeito-ES3.js": {
       "expectCount": 2,
@@ -14,8 +14,8 @@
       "undocumentLines": []
     },
     "src/math/core/Matrix.js": {
-      "expectCount": 287,
-      "actualCount": 287,
+      "expectCount": 302,
+      "actualCount": 302,
       "undocumentLines": []
     },
     "src/math/core/tools/LinearAlgebra.js": {
@@ -31,6 +31,11 @@
     "src/math/core/tools/Random.js": {
       "expectCount": 20,
       "actualCount": 20,
+      "undocumentLines": []
+    },
+    "src/math/core/tools/Signal.js": {
+      "expectCount": 59,
+      "actualCount": 59,
       "undocumentLines": []
     },
     "src/math/core/tools/Statistics.js": {

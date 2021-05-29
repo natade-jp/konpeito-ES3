@@ -38,7 +38,9 @@
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#math-core-tools">math/core/tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/LinearAlgebra.js~LinearAlgebra.html">LinearAlgebra</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/Probability.js~Probability.html">Probability</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/Random.js~Random.html">Random</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/Signal.js~Signal.html">Signal</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/core/tools/Statistics.js~Statistics.html">Statistics</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KSignalSettings">KSignalSettings</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-KStatisticsSettings">KStatisticsSettings</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#math-tools">math/tools</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/tools/DataAnalysis.js~DataAnalysis.html">DataAnalysis</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#math-tools-dataanalysis">math/tools/DataAnalysis</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/math/tools/DataAnalysis/MultipleRegressionAnalysis.js~MultipleRegressionAnalysis.html">MultipleRegressionAnalysis</a></span></span></li>
@@ -57,13 +59,13 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import Matrix from &apos;<span><a href="file/src/math/core/Matrix.js.html#lineNumber405">konpeito_es3/src/math/core/Matrix.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import Matrix from &apos;<span><a href="file/src/math/core/Matrix.js.html#lineNumber407">konpeito_es3/src/math/core/Matrix.js</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
   
   
-  <span data-ice="source">| <span><a href="file/src/math/core/Matrix.js.html#lineNumber405">source</a></span></span>
+  <span data-ice="source">| <span><a href="file/src/math/core/Matrix.js.html#lineNumber407">source</a></span></span>
 </div>
 
 <div class="self-detail detail">
@@ -231,6 +233,64 @@
           
           
           
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#static-method-hamming">hamming</a></span></span><span class="code" data-ice="signature">(size: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, periodic: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Hamming window.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      <span data-ice="static">static</span>
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#static-method-hann">hann</a></span></span><span class="code" data-ice="signature">(size: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, periodic: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Hann (Hanning) window.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      <span data-ice="static">static</span>
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
           <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#static-method-memset">memset</a></span></span><span class="code" data-ice="signature">(number: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, dimension: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, column_length: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
@@ -354,6 +414,35 @@
         
         
         <div data-ice="description"><p>Convert number to Matrix type.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      <span data-ice="static">static</span>
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#static-method-window">window</a></span></span><span class="code" data-ice="signature">(name: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, size: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, periodic: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Create window function for signal processing.</p>
 </div>
       </div>
     </td>
@@ -1667,6 +1756,35 @@
           
           
           
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#instance-method-conv">conv</a></span></span><span class="code" data-ice="signature">(number: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Convolution integral, Polynomial multiplication.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
           <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#instance-method-corrcoef">corrcoef</a></span></span><span class="code" data-ice="signature">(y_or_type: <span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span> | <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, type: <span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
@@ -1906,6 +2024,64 @@
         
         
         <div data-ice="description"><p>Hermitian transpose.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#instance-method-dct">dct</a></span></span><span class="code" data-ice="signature">(type: <span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Discrete cosine transform (DCT-II, DCT).</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#instance-method-dct2">dct2</a></span></span><span class="code" data-ice="signature">(): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Discrete two-dimensional cosine transform (2D DCT).</p>
 </div>
       </div>
     </td>
@@ -2740,6 +2916,93 @@
           
           
           
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#instance-method-fft">fft</a></span></span><span class="code" data-ice="signature">(type: <span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Discrete Fourier transform (DFT).</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#instance-method-fft2">fft2</a></span></span><span class="code" data-ice="signature">(): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Discrete two-dimensional Fourier transform (2D DFT).</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#instance-method-fftshift">fftshift</a></span></span><span class="code" data-ice="signature">(type: <span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>FFT shift.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
           <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#instance-method-finv">finv</a></span></span><span class="code" data-ice="signature">(d1: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, d2: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
@@ -3298,6 +3561,122 @@
         
         
         <div data-ice="description"><p>Number of rows in matrix.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#instance-method-idct">idct</a></span></span><span class="code" data-ice="signature">(type: <span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Inverse discrete cosine transform (DCT-III, IDCT).</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#instance-method-idct2">idct2</a></span></span><span class="code" data-ice="signature">(): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Inverse discrete two-dimensional cosine transform (2D IDCT).</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#instance-method-ifft">ifft</a></span></span><span class="code" data-ice="signature">(type: <span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Inverse discrete Fourier transform (IDFT).</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#instance-method-ifft2">ifft2</a></span></span><span class="code" data-ice="signature">(): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Inverse discrete two-dimensional Fourier transform (2D IDFT).</p>
 </div>
       </div>
     </td>
@@ -5522,6 +5901,35 @@
           
           
           
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#instance-method-powerfft">powerfft</a></span></span><span class="code" data-ice="signature">(type: <span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Power spectral density.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
           <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#instance-method-prod">prod</a></span></span><span class="code" data-ice="signature">(type: <span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
@@ -7498,6 +7906,35 @@
           
           
           
+          <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#instance-method-xcorr">xcorr</a></span></span><span class="code" data-ice="signature">(number: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>ACF(Autocorrelation function), cros-correlation function.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
           <span class="code" data-ice="name"><span><a href="class/src/math/core/Matrix.js~Matrix.html#instance-method-xor">xor</a></span></span><span class="code" data-ice="signature">(number: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
         </p>
       </div>
@@ -7713,7 +8150,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3353">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3355">source</a></span></span>
     </span>
   </h3>
 
@@ -7798,7 +8235,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber555">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber557">source</a></span></span>
     </span>
   </h3>
 
@@ -7870,7 +8307,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber944">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber946">source</a></span></span>
     </span>
   </h3>
 
@@ -7959,7 +8396,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1382">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1384">source</a></span></span>
     </span>
   </h3>
 
@@ -8028,6 +8465,170 @@
   
 </div>
 <div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-method-hamming">
+    <span class="access" data-ice="access">public</span>
+    <span data-ice="static">static</span>
+    
+    
+    
+    
+    <span class="code" data-ice="name">hamming</span><span class="code" data-ice="signature">(size: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, periodic: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4596">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Hamming window.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">size</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Window length</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">periodic</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: &quot;symmetric&quot;</li></ul></td>
+      <td data-ice="description"><p>0/&quot;symmetric&quot; (default) , 1/&quot;periodic&quot;</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>Column vector.</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-method-hann">
+    <span class="access" data-ice="access">public</span>
+    <span data-ice="static">static</span>
+    
+    
+    
+    
+    <span class="code" data-ice="name">hann</span><span class="code" data-ice="signature">(size: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, periodic: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4586">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Hann (Hanning) window.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">size</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Window length</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">periodic</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: &quot;symmetric&quot;</li></ul></td>
+      <td data-ice="description"><p>0/&quot;symmetric&quot; (default) , 1/&quot;periodic&quot;</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>Column vector.</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="static-method-memset">
     <span class="access" data-ice="access">public</span>
     <span data-ice="static">static</span>
@@ -8039,7 +8640,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1355">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1357">source</a></span></span>
     </span>
   </h3>
 
@@ -8126,7 +8727,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1407">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1409">source</a></span></span>
     </span>
   </h3>
 
@@ -8206,7 +8807,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2677">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2679">source</a></span></span>
     </span>
   </h3>
 
@@ -8293,7 +8894,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2690">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2692">source</a></span></span>
     </span>
   </h3>
 
@@ -8380,7 +8981,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber569">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber571">source</a></span></span>
     </span>
   </h3>
 
@@ -8441,6 +9042,107 @@
   
 </div>
 <div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-method-window">
+    <span class="access" data-ice="access">public</span>
+    <span data-ice="static">static</span>
+    
+    
+    
+    
+    <span class="code" data-ice="name">window</span><span class="code" data-ice="signature">(name: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, size: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>, periodic: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4576">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Create window function for signal processing.
+The following window functions are available.</p>
+<ul>
+<li>&quot;rectangle&quot;: Rectangular window</li>
+<li>&quot;hann&quot;: Hann/Hanning window.</li>
+<li>&quot;hamming&quot;: Hamming window.</li>
+<li>&quot;blackman&quot;: Blackman window.</li>
+<li>&quot;blackmanharris&quot;: Blackman-Harris window.</li>
+<li>&quot;blackmannuttall&quot;: Blackman-Nuttall window.</li>
+<li>&quot;flattop&quot;: Flat top window.</li>
+<li>&quot;sin&quot;, Half cycle sine window.</li>
+<li>&quot;vorbis&quot;, Vorbis window.</li>
+</ul>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">name</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Window function name.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">size</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Window length</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">periodic</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: &quot;symmetric&quot;</li></ul></td>
+      <td data-ice="description"><p>0/&quot;symmetric&quot; (default) , 1/&quot;periodic&quot;</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>Column vector.</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="static-method-zeros">
     <span class="access" data-ice="access">public</span>
     <span data-ice="static">static</span>
@@ -8452,7 +9154,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1394">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1396">source</a></span></span>
     </span>
   </h3>
 
@@ -8535,7 +9237,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber415">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber417">source</a></span></span>
     </span>
   </h3>
 
@@ -8606,7 +9308,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3601">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3603">source</a></span></span>
     </span>
   </h3>
 
@@ -8663,7 +9365,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2193">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2195">source</a></span></span>
     </span>
   </h3>
 
@@ -8720,7 +9422,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2452">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2454">source</a></span></span>
     </span>
   </h3>
 
@@ -8777,7 +9479,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2492">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2494">source</a></span></span>
     </span>
   </h3>
 
@@ -8834,7 +9536,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2572">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2574">source</a></span></span>
     </span>
   </h3>
 
@@ -8891,7 +9593,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2592">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2594">source</a></span></span>
     </span>
   </h3>
 
@@ -8948,7 +9650,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2612">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2614">source</a></span></span>
     </span>
   </h3>
 
@@ -9005,7 +9707,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2632">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2634">source</a></span></span>
     </span>
   </h3>
 
@@ -9062,7 +9764,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1819">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1821">source</a></span></span>
     </span>
   </h3>
 
@@ -9135,7 +9837,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4220">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4222">source</a></span></span>
     </span>
   </h3>
 
@@ -9211,7 +9913,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2122">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2124">source</a></span></span>
     </span>
   </h3>
 
@@ -9268,7 +9970,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2532">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2534">source</a></span></span>
     </span>
   </h3>
 
@@ -9325,7 +10027,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2552">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2554">source</a></span></span>
     </span>
   </h3>
 
@@ -9382,7 +10084,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2442">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2444">source</a></span></span>
     </span>
   </h3>
 
@@ -9439,7 +10141,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2472">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2474">source</a></span></span>
     </span>
   </h3>
 
@@ -9496,7 +10198,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2414">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2416">source</a></span></span>
     </span>
   </h3>
 
@@ -9556,7 +10258,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2427">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2429">source</a></span></span>
     </span>
   </h3>
 
@@ -9634,7 +10336,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2512">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2514">source</a></span></span>
     </span>
   </h3>
 
@@ -9691,7 +10393,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3793">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3795">source</a></span></span>
     </span>
   </h3>
 
@@ -9766,7 +10468,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3823">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3825">source</a></span></span>
     </span>
   </h3>
 
@@ -9847,7 +10549,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3808">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3810">source</a></span></span>
     </span>
   </h3>
 
@@ -9936,7 +10638,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3853">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3855">source</a></span></span>
     </span>
   </h3>
 
@@ -10017,7 +10719,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3838">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3840">source</a></span></span>
     </span>
   </h3>
 
@@ -10098,7 +10800,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3997">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3999">source</a></span></span>
     </span>
   </h3>
 
@@ -10187,7 +10889,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4012">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4014">source</a></span></span>
     </span>
   </h3>
 
@@ -10268,7 +10970,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3981">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3983">source</a></span></span>
     </span>
   </h3>
 
@@ -10349,7 +11051,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1200">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1202">source</a></span></span>
     </span>
   </h3>
 
@@ -10405,7 +11107,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2299">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2301">source</a></span></span>
     </span>
   </h3>
 
@@ -10462,7 +11164,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2153">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2155">source</a></span></span>
     </span>
   </h3>
 
@@ -10519,7 +11221,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4145">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4147">source</a></span></span>
     </span>
   </h3>
 
@@ -10595,7 +11297,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4158">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4160">source</a></span></span>
     </span>
   </h3>
 
@@ -10671,7 +11373,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4132">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4134">source</a></span></span>
     </span>
   </h3>
 
@@ -10747,7 +11449,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3366">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3368">source</a></span></span>
     </span>
   </h3>
 
@@ -10826,7 +11528,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3332">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3334">source</a></span></span>
     </span>
   </h3>
 
@@ -10905,7 +11607,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber651">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber653">source</a></span></span>
     </span>
   </h3>
 
@@ -10961,7 +11663,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber933">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber935">source</a></span></span>
     </span>
   </h3>
 
@@ -11035,7 +11737,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1781">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1783">source</a></span></span>
     </span>
   </h3>
 
@@ -11118,7 +11820,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1798">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1800">source</a></span></span>
     </span>
   </h3>
 
@@ -11201,7 +11903,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3322">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3324">source</a></span></span>
     </span>
   </h3>
 
@@ -11275,7 +11977,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3313">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3315">source</a></span></span>
     </span>
   </h3>
 
@@ -11349,7 +12051,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1306">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1308">source</a></span></span>
     </span>
   </h3>
 
@@ -11422,7 +12124,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2203">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2205">source</a></span></span>
     </span>
   </h3>
 
@@ -11468,6 +12170,78 @@ Initialization can be performed as follows.</p>
   
 </div>
 <div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-conv">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">conv</span><span class="code" data-ice="signature">(number: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4545">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Convolution integral, Polynomial multiplication.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">number</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-corrcoef">
     <span class="access" data-ice="access">public</span>
     
@@ -11479,7 +12253,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4442">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4444">source</a></span></span>
     </span>
   </h3>
 
@@ -11561,7 +12335,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2393">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2395">source</a></span></span>
     </span>
   </h3>
 
@@ -11618,7 +12392,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2482">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2484">source</a></span></span>
     </span>
   </h3>
 
@@ -11675,7 +12449,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2562">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2564">source</a></span></span>
     </span>
   </h3>
 
@@ -11732,7 +12506,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2582">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2584">source</a></span></span>
     </span>
   </h3>
 
@@ -11789,7 +12563,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4421">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4423">source</a></span></span>
     </span>
   </h3>
 
@@ -11871,7 +12645,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2602">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2604">source</a></span></span>
     </span>
   </h3>
 
@@ -11928,7 +12702,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2622">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2624">source</a></span></span>
     </span>
   </h3>
 
@@ -11985,7 +12759,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3593">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3595">source</a></span></span>
     </span>
   </h3>
 
@@ -12031,6 +12805,135 @@ Initialization can be performed as follows.</p>
   
 </div>
 <div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-dct">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">dct</span><span class="code" data-ice="signature">(type: <span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4495">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Discrete cosine transform (DCT-II, DCT).</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">type</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>dct(x)</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-dct2">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">dct2</span><span class="code" data-ice="signature">(): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4528">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Discrete two-dimensional cosine transform (2D DCT).</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-deleteColumn">
     <span class="access" data-ice="access">public</span>
     
@@ -12042,7 +12945,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3196">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3198">source</a></span></span>
     </span>
   </h3>
 
@@ -12116,7 +13019,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3187">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3189">source</a></span></span>
     </span>
   </h3>
 
@@ -12190,7 +13093,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1340">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1342">source</a></span></span>
     </span>
   </h3>
 
@@ -12247,7 +13150,7 @@ Initialization can be performed as follows.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1419">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1421">source</a></span></span>
     </span>
   </h3>
 
@@ -12305,7 +13208,7 @@ If vector, generate a matrix with diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1913">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1915">source</a></span></span>
     </span>
   </h3>
 
@@ -12381,7 +13284,7 @@ If vector, generate a matrix with diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4493">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4645">source</a></span></span>
     </span>
   </h3>
 
@@ -12454,7 +13357,7 @@ If vector, generate a matrix with diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1982">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1984">source</a></span></span>
     </span>
   </h3>
 
@@ -12527,7 +13430,7 @@ If vector, generate a matrix with diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2001">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2003">source</a></span></span>
     </span>
   </h3>
 
@@ -12584,7 +13487,7 @@ If vector, generate a matrix with diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1962">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1964">source</a></span></span>
     </span>
   </h3>
 
@@ -12657,7 +13560,7 @@ If vector, generate a matrix with diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2261">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2263">source</a></span></span>
     </span>
   </h3>
 
@@ -12730,7 +13633,7 @@ If vector, generate a matrix with diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1216">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1218">source</a></span></span>
     </span>
   </h3>
 
@@ -12786,7 +13689,7 @@ If vector, generate a matrix with diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1092">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1094">source</a></span></span>
     </span>
   </h3>
 
@@ -12869,7 +13772,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber972">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber974">source</a></span></span>
     </span>
   </h3>
 
@@ -12946,7 +13849,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1007">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1009">source</a></span></span>
     </span>
   </h3>
 
@@ -13024,7 +13927,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1067">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1069">source</a></span></span>
     </span>
   </h3>
 
@@ -13098,7 +14001,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1044">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1046">source</a></span></span>
     </span>
   </h3>
 
@@ -13172,7 +14075,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3679">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3681">source</a></span></span>
     </span>
   </h3>
 
@@ -13235,7 +14138,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber844">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber846">source</a></span></span>
     </span>
   </h3>
 
@@ -13315,7 +14218,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3890">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3892">source</a></span></span>
     </span>
   </h3>
 
@@ -13374,7 +14277,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3901">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3903">source</a></span></span>
     </span>
   </h3>
 
@@ -13433,7 +14336,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3923">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3925">source</a></span></span>
     </span>
   </h3>
 
@@ -13492,7 +14395,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3912">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3914">source</a></span></span>
     </span>
   </h3>
 
@@ -13551,7 +14454,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3264">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3266">source</a></span></span>
     </span>
   </h3>
 
@@ -13632,7 +14535,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3254">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3256">source</a></span></span>
     </span>
   </h3>
 
@@ -13713,7 +14616,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2329">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2331">source</a></span></span>
     </span>
   </h3>
 
@@ -13770,7 +14673,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2339">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2341">source</a></span></span>
     </span>
   </h3>
 
@@ -13827,7 +14730,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3866">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3868">source</a></span></span>
     </span>
   </h3>
 
@@ -13886,7 +14789,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4187">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4189">source</a></span></span>
     </span>
   </h3>
 
@@ -13958,6 +14861,208 @@ The arguments of the method can switch the direction of the matrix to be execute
   
 </div>
 <div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-fft">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">fft</span><span class="code" data-ice="signature">(type: <span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4468">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Discrete Fourier transform (DFT).</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">type</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>fft(x)</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-fft2">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">fft2</span><span class="code" data-ice="signature">(): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4512">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Discrete two-dimensional Fourier transform (2D DFT).</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-fftshift">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">fftshift</span><span class="code" data-ice="signature">(type: <span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4606">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>FFT shift.
+Circular shift beginning at the center of the signal.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">type</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-finv">
     <span class="access" data-ice="access">public</span>
     
@@ -13969,7 +15074,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4202">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4204">source</a></span></span>
     </span>
   </h3>
 
@@ -14052,7 +15157,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2173">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2175">source</a></span></span>
     </span>
   </h3>
 
@@ -14109,7 +15214,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3451">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3453">source</a></span></span>
     </span>
   </h3>
 
@@ -14182,7 +15287,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3434">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3436">source</a></span></span>
     </span>
   </h3>
 
@@ -14239,7 +15344,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3442">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3444">source</a></span></span>
     </span>
   </h3>
 
@@ -14296,7 +15401,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2143">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2145">source</a></span></span>
     </span>
   </h3>
 
@@ -14353,7 +15458,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4172">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4174">source</a></span></span>
     </span>
   </h3>
 
@@ -14436,7 +15541,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2183">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2185">source</a></span></span>
     </span>
   </h3>
 
@@ -14493,7 +15598,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3764">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3766">source</a></span></span>
     </span>
   </h3>
 
@@ -14576,7 +15681,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3779">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3781">source</a></span></span>
     </span>
   </h3>
 
@@ -14659,7 +15764,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3722">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3724">source</a></span></span>
     </span>
   </h3>
 
@@ -14718,7 +15823,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3735">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3737">source</a></span></span>
     </span>
   </h3>
 
@@ -14801,7 +15906,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3711">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3713">source</a></span></span>
     </span>
   </h3>
 
@@ -14860,7 +15965,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3749">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3751">source</a></span></span>
     </span>
   </h3>
 
@@ -14943,7 +16048,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4342">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4344">source</a></span></span>
     </span>
   </h3>
 
@@ -15015,7 +16120,7 @@ The arguments of the method can switch the direction of the matrix to be execute
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1171">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1173">source</a></span></span>
     </span>
   </h3>
 
@@ -15096,7 +16201,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber884">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber886">source</a></span></span>
     </span>
   </h3>
 
@@ -15152,7 +16257,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1124">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1126">source</a></span></span>
     </span>
   </h3>
 
@@ -15240,7 +16345,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber869">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber871">source</a></span></span>
     </span>
   </h3>
 
@@ -15296,7 +16401,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1272">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1274">source</a></span></span>
     </span>
   </h3>
 
@@ -15341,6 +16446,264 @@ Each element of the matrix is composed of complex numbers.</p>
   
 </div>
 <div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-idct">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">idct</span><span class="code" data-ice="signature">(type: <span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4504">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Inverse discrete cosine transform (DCT-III, IDCT).</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">type</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>idct(x)</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-idct2">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">idct2</span><span class="code" data-ice="signature">(): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4536">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Inverse discrete two-dimensional cosine transform (2D IDCT).</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-ifft">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">ifft</span><span class="code" data-ice="signature">(type: <span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4477">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Inverse discrete Fourier transform (IDFT).</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">type</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>ifft(x)</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-ifft2">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">ifft2</span><span class="code" data-ice="signature">(): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4520">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Inverse discrete two-dimensional Fourier transform (2D IDFT).</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-imag">
     <span class="access" data-ice="access">public</span>
     
@@ -15352,7 +16715,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2112">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2114">source</a></span></span>
     </span>
   </h3>
 
@@ -15409,7 +16772,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3474">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3476">source</a></span></span>
     </span>
   </h3>
 
@@ -15487,7 +16850,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3611">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3613">source</a></span></span>
     </span>
   </h3>
 
@@ -15568,7 +16931,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1208">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1210">source</a></span></span>
     </span>
   </h3>
 
@@ -15624,7 +16987,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1953">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1955">source</a></span></span>
     </span>
   </h3>
 
@@ -15684,7 +17047,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1468">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1470">source</a></span></span>
     </span>
   </h3>
 
@@ -15740,7 +17103,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1516">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1518">source</a></span></span>
     </span>
   </h3>
 
@@ -15813,7 +17176,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3001">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3003">source</a></span></span>
     </span>
   </h3>
 
@@ -15891,7 +17254,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1566">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1568">source</a></span></span>
     </span>
   </h3>
 
@@ -15964,7 +17327,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2979">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2981">source</a></span></span>
     </span>
   </h3>
 
@@ -16025,7 +17388,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1660">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1662">source</a></span></span>
     </span>
   </h3>
 
@@ -16098,7 +17461,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1541">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1543">source</a></span></span>
     </span>
   </h3>
 
@@ -16171,7 +17534,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2969">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2971">source</a></span></span>
     </span>
   </h3>
 
@@ -16232,7 +17595,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2990">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2992">source</a></span></span>
     </span>
   </h3>
 
@@ -16309,7 +17672,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1484">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1486">source</a></span></span>
     </span>
   </h3>
 
@@ -16365,7 +17728,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2939">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2941">source</a></span></span>
     </span>
   </h3>
 
@@ -16426,7 +17789,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2919">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2921">source</a></span></span>
     </span>
   </h3>
 
@@ -16486,7 +17849,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2959">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2961">source</a></span></span>
     </span>
   </h3>
 
@@ -16547,7 +17910,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2929">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2931">source</a></span></span>
     </span>
   </h3>
 
@@ -16607,7 +17970,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2899">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2901">source</a></span></span>
     </span>
   </h3>
 
@@ -16684,7 +18047,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1614">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1616">source</a></span></span>
     </span>
   </h3>
 
@@ -16757,7 +18120,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1717">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1719">source</a></span></span>
     </span>
   </h3>
 
@@ -16830,7 +18193,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2909">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2911">source</a></span></span>
     </span>
   </h3>
 
@@ -16890,7 +18253,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2949">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2951">source</a></span></span>
     </span>
   </h3>
 
@@ -16951,7 +18314,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1501">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1503">source</a></span></span>
     </span>
   </h3>
 
@@ -17024,7 +18387,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1598">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1600">source</a></span></span>
     </span>
   </h3>
 
@@ -17097,7 +18460,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1460">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1462">source</a></span></span>
     </span>
   </h3>
 
@@ -17153,7 +18516,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1452">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1454">source</a></span></span>
     </span>
   </h3>
 
@@ -17209,7 +18572,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1492">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1494">source</a></span></span>
     </span>
   </h3>
 
@@ -17265,7 +18628,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1640">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1642">source</a></span></span>
     </span>
   </h3>
 
@@ -17338,7 +18701,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1701">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1703">source</a></span></span>
     </span>
   </h3>
 
@@ -17411,7 +18774,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1685">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1687">source</a></span></span>
     </span>
   </h3>
 
@@ -17484,7 +18847,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1582">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1584">source</a></span></span>
     </span>
   </h3>
 
@@ -17557,7 +18920,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1627">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1629">source</a></span></span>
     </span>
   </h3>
 
@@ -17630,7 +18993,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1476">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1478">source</a></span></span>
     </span>
   </h3>
 
@@ -17686,7 +19049,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2888">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2890">source</a></span></span>
     </span>
   </h3>
 
@@ -17764,7 +19127,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1525">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1527">source</a></span></span>
     </span>
   </h3>
 
@@ -17837,7 +19200,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1256">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1258">source</a></span></span>
     </span>
   </h3>
 
@@ -17893,7 +19256,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3643">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3645">source</a></span></span>
     </span>
   </h3>
 
@@ -17967,7 +19330,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2319">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2321">source</a></span></span>
     </span>
   </h3>
 
@@ -18024,7 +19387,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2369">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2371">source</a></span></span>
     </span>
   </h3>
 
@@ -18081,7 +19444,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2349">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2351">source</a></span></span>
     </span>
   </h3>
 
@@ -18138,7 +19501,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2359">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2361">source</a></span></span>
     </span>
   </h3>
 
@@ -18195,7 +19558,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2646">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2648">source</a></span></span>
     </span>
   </h3>
 
@@ -18252,7 +19615,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3634">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3636">source</a></span></span>
     </span>
   </h3>
 
@@ -18314,7 +19677,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3623">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3625">source</a></span></span>
     </span>
   </h3>
 
@@ -18377,7 +19740,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4400">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4402">source</a></span></span>
     </span>
   </h3>
 
@@ -18459,7 +19822,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4297">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4299">source</a></span></span>
     </span>
   </h3>
 
@@ -18532,7 +19895,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4324">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4326">source</a></span></span>
     </span>
   </h3>
 
@@ -18604,7 +19967,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4351">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4353">source</a></span></span>
     </span>
   </h3>
 
@@ -18676,7 +20039,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4306">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4308">source</a></span></span>
     </span>
   </h3>
 
@@ -18749,7 +20112,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2079">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2081">source</a></span></span>
     </span>
   </h3>
 
@@ -18825,7 +20188,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4360">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4362">source</a></span></span>
     </span>
   </h3>
 
@@ -18897,7 +20260,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4371">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4373">source</a></span></span>
     </span>
   </h3>
 
@@ -18978,7 +20341,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1860">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1862">source</a></span></span>
     </span>
   </h3>
 
@@ -19054,7 +20417,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4484">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4636">source</a></span></span>
     </span>
   </h3>
 
@@ -19127,7 +20490,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3878">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3880">source</a></span></span>
     </span>
   </h3>
 
@@ -19202,7 +20565,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2025">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2027">source</a></span></span>
     </span>
   </h3>
 
@@ -19275,7 +20638,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2213">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2215">source</a></span></span>
     </span>
   </h3>
 
@@ -19332,7 +20695,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2034">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2036">source</a></span></span>
     </span>
   </h3>
 
@@ -19389,7 +20752,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2015">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2017">source</a></span></span>
     </span>
   </h3>
 
@@ -19462,7 +20825,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1297">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1299">source</a></span></span>
     </span>
   </h3>
 
@@ -19535,7 +20898,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1280">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1282">source</a></span></span>
     </span>
   </h3>
 
@@ -19591,7 +20954,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1288">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1290">source</a></span></span>
     </span>
   </h3>
 
@@ -19647,7 +21010,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3951">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3953">source</a></span></span>
     </span>
   </h3>
 
@@ -19732,7 +21095,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3966">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3968">source</a></span></span>
     </span>
   </h3>
 
@@ -19817,7 +21180,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3936">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3938">source</a></span></span>
     </span>
   </h3>
 
@@ -19902,7 +21265,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4255">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4257">source</a></span></span>
     </span>
   </h3>
 
@@ -19962,7 +21325,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2044">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2046">source</a></span></span>
     </span>
   </h3>
 
@@ -20035,7 +21398,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4232">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4234">source</a></span></span>
     </span>
   </h3>
 
@@ -20111,7 +21474,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3698">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3700">source</a></span></span>
     </span>
   </h3>
 
@@ -20168,7 +21531,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4039">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4041">source</a></span></span>
     </span>
   </h3>
 
@@ -20243,7 +21606,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4052">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4054">source</a></span></span>
     </span>
   </h3>
 
@@ -20318,7 +21681,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4026">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4028">source</a></span></span>
     </span>
   </h3>
 
@@ -20393,7 +21756,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2230">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2232">source</a></span></span>
     </span>
   </h3>
 
@@ -20459,6 +21822,79 @@ Each element of the matrix is composed of complex numbers.</p>
   
 </div>
 <div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-powerfft">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">powerfft</span><span class="code" data-ice="signature">(type: <span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4486">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Power spectral density.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">type</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixSettings">KMatrixSettings</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>abs(fft(x)).^2</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-prod">
     <span class="access" data-ice="access">public</span>
     
@@ -20470,7 +21906,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4333">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4335">source</a></span></span>
     </span>
   </h3>
 
@@ -20542,7 +21978,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3654">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3656">source</a></span></span>
     </span>
   </h3>
 
@@ -20604,7 +22040,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1323">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1325">source</a></span></span>
     </span>
   </h3>
 
@@ -20678,7 +22114,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1314">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1316">source</a></span></span>
     </span>
   </h3>
 
@@ -20734,7 +22170,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2102">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2104">source</a></span></span>
     </span>
   </h3>
 
@@ -20791,7 +22227,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2058">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2060">source</a></span></span>
     </span>
   </h3>
 
@@ -20867,7 +22303,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4503">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4655">source</a></span></span>
     </span>
   </h3>
 
@@ -20943,7 +22379,7 @@ Each element of the matrix is composed of complex numbers.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3404">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3406">source</a></span></span>
     </span>
   </h3>
 
@@ -21025,7 +22461,7 @@ The number of elements in the matrix doesn&apos;t increase or decrease.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3142">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3144">source</a></span></span>
     </span>
   </h3>
 
@@ -21107,7 +22543,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3393">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3395">source</a></span></span>
     </span>
   </h3>
 
@@ -21186,7 +22622,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3085">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3087">source</a></span></span>
     </span>
   </h3>
 
@@ -21260,7 +22696,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2163">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2165">source</a></span></span>
     </span>
   </h3>
 
@@ -21317,7 +22753,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2309">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2311">source</a></span></span>
     </span>
   </h3>
 
@@ -21374,7 +22810,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1248">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1250">source</a></span></span>
     </span>
   </h3>
 
@@ -21430,7 +22866,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4282">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4284">source</a></span></span>
     </span>
   </h3>
 
@@ -21503,7 +22939,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2522">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2524">source</a></span></span>
     </span>
   </h3>
 
@@ -21560,7 +22996,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2542">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2544">source</a></span></span>
     </span>
   </h3>
 
@@ -21617,7 +23053,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1148">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1150">source</a></span></span>
     </span>
   </h3>
 
@@ -21712,7 +23148,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4267">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4269">source</a></span></span>
     </span>
   </h3>
 
@@ -21788,7 +23224,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2133">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2135">source</a></span></span>
     </span>
   </h3>
 
@@ -21847,7 +23283,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4466">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4618">source</a></span></span>
     </span>
   </h3>
 
@@ -21906,7 +23342,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2383">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2385">source</a></span></span>
     </span>
   </h3>
 
@@ -21963,7 +23399,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2660">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2662">source</a></span></span>
     </span>
   </h3>
 
@@ -22020,7 +23456,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2462">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2464">source</a></span></span>
     </span>
   </h3>
 
@@ -22077,7 +23513,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1754">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1756">source</a></span></span>
     </span>
   </h3>
 
@@ -22152,7 +23588,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4409">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4411">source</a></span></span>
     </span>
   </h3>
 
@@ -22224,7 +23660,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4453">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4455">source</a></span></span>
     </span>
   </h3>
 
@@ -22305,7 +23741,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2289">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2291">source</a></span></span>
     </span>
   </h3>
 
@@ -22362,7 +23798,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2281">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2283">source</a></span></span>
     </span>
   </h3>
 
@@ -22422,7 +23858,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4430">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4432">source</a></span></span>
     </span>
   </h3>
 
@@ -22494,7 +23930,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4389">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4391">source</a></span></span>
     </span>
   </h3>
 
@@ -22566,7 +24002,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1839">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1841">source</a></span></span>
     </span>
   </h3>
 
@@ -22639,7 +24075,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4475">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4627">source</a></span></span>
     </span>
   </h3>
 
@@ -22712,7 +24148,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4315">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4317">source</a></span></span>
     </span>
   </h3>
 
@@ -22784,7 +24220,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3690">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3692">source</a></span></span>
     </span>
   </h3>
 
@@ -22846,7 +24282,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2403">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2405">source</a></span></span>
     </span>
   </h3>
 
@@ -22903,7 +24339,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2502">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2504">source</a></span></span>
     </span>
   </h3>
 
@@ -22960,7 +24396,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4078">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4080">source</a></span></span>
     </span>
   </h3>
 
@@ -23036,7 +24472,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4105">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4107">source</a></span></span>
     </span>
   </h3>
 
@@ -23119,7 +24555,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2760">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2762">source</a></span></span>
     </span>
   </h3>
 
@@ -23197,7 +24633,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2720">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2722">source</a></span></span>
     </span>
   </h3>
 
@@ -23275,7 +24711,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2869">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2871">source</a></span></span>
     </span>
   </h3>
 
@@ -23336,7 +24772,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2857">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2859">source</a></span></span>
     </span>
   </h3>
 
@@ -23397,7 +24833,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2707">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2709">source</a></span></span>
     </span>
   </h3>
 
@@ -23475,7 +24911,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2785">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2787">source</a></span></span>
     </span>
   </h3>
 
@@ -23536,7 +24972,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2809">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2811">source</a></span></span>
     </span>
   </h3>
 
@@ -23597,7 +25033,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2845">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2847">source</a></span></span>
     </span>
   </h3>
 
@@ -23658,7 +25094,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2821">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2823">source</a></span></span>
     </span>
   </h3>
 
@@ -23719,7 +25155,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2747">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2749">source</a></span></span>
     </span>
   </h3>
 
@@ -23797,7 +25233,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2797">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2799">source</a></span></span>
     </span>
   </h3>
 
@@ -23858,7 +25294,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2833">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2835">source</a></span></span>
     </span>
   </h3>
 
@@ -23919,7 +25355,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2773">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2775">source</a></span></span>
     </span>
   </h3>
 
@@ -23997,7 +25433,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2734">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber2736">source</a></span></span>
     </span>
   </h3>
 
@@ -24076,7 +25512,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4091">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4093">source</a></span></span>
     </span>
   </h3>
 
@@ -24152,7 +25588,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4119">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4121">source</a></span></span>
     </span>
   </h3>
 
@@ -24228,7 +25664,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1228">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1230">source</a></span></span>
     </span>
   </h3>
 
@@ -24284,7 +25720,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber816">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber818">source</a></span></span>
     </span>
   </h3>
 
@@ -24340,7 +25776,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1236">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1238">source</a></span></span>
     </span>
   </h3>
 
@@ -24396,7 +25832,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber790">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber792">source</a></span></span>
     </span>
   </h3>
 
@@ -24452,7 +25888,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber659">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber661">source</a></span></span>
     </span>
   </h3>
 
@@ -24508,7 +25944,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4065">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4067">source</a></span></span>
     </span>
   </h3>
 
@@ -24584,7 +26020,7 @@ Initialized with 0 when expanding.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1332">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1334">source</a></span></span>
     </span>
   </h3>
 
@@ -24642,7 +26078,7 @@ Sum of diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3578">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3580">source</a></span></span>
     </span>
   </h3>
 
@@ -24699,7 +26135,7 @@ Sum of diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3667">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3669">source</a></span></span>
     </span>
   </h3>
 
@@ -24763,7 +26199,7 @@ Sum of diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4511">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4663">source</a></span></span>
     </span>
   </h3>
 
@@ -24820,7 +26256,7 @@ Sum of diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4380">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4382">source</a></span></span>
     </span>
   </h3>
 
@@ -24892,7 +26328,7 @@ Sum of diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1264">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber1266">source</a></span></span>
     </span>
   </h3>
 
@@ -24937,6 +26373,82 @@ Sum of diagonal elements.</p>
   
 </div>
 <div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-xcorr">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">xcorr</span><span class="code" data-ice="signature">(number: <span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span>): <span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4555">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>ACF(Autocorrelation function), cros-correlation function.</p>
+<ul>
+<li>If the argument is omitted, it is calculated by the autocorrelation function.</li>
+</ul>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">number</td>
+      <td data-ice="type" class="code"><span><a href="typedef/index.html#static-typedef-KMatrixInputData">KMatrixInputData</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"><p>Matrix to calculate the correlation.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/math/core/Matrix.js~Matrix.html">Matrix</a></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-xor">
     <span class="access" data-ice="access">public</span>
     
@@ -24948,7 +26460,7 @@ Sum of diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4244">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4246">source</a></span></span>
     </span>
   </h3>
 
@@ -25026,7 +26538,7 @@ Sum of diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber641">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber643">source</a></span></span>
     </span>
   </h3>
 
@@ -25070,7 +26582,7 @@ Sum of diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3295">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3297">source</a></span></span>
     </span>
   </h3>
 
@@ -25144,7 +26656,7 @@ Sum of diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3169">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3171">source</a></span></span>
     </span>
   </h3>
 
@@ -25218,7 +26730,7 @@ Sum of diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3152">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3154">source</a></span></span>
     </span>
   </h3>
 
@@ -25292,7 +26804,7 @@ Sum of diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3018">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber3020">source</a></span></span>
     </span>
   </h3>
 
@@ -25366,7 +26878,7 @@ Sum of diagonal elements.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4519">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/math/core/Matrix.js.html#lineNumber4671">source</a></span></span>
     </span>
   </h3>
 

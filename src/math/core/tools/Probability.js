@@ -8,6 +8,8 @@
  *  The MIT license https://opensource.org/licenses/MIT
  */
 
+import Polyfill from "../../tools/Polyfill.js";
+
 /**
  * Return true if the value is integer.
  * @param {number} x

@@ -48,6 +48,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "konpeito_es3/src/math/core/tools/signal.js~signal",
+    "class/src/math/core/tools/Signal.js~Signal.html",
+    "<span>Signal</span> <span class=\"search-result-import-path\">konpeito_es3/src/math/core/tools/Signal.js</span>",
+    "class"
+  ],
+  [
     "konpeito_es3/src/math/core/tools/statistics.js~statistics",
     "class/src/math/core/tools/Statistics.js~Statistics.html",
     "<span>Statistics</span> <span class=\"search-result-import-path\">konpeito_es3/src/math/core/tools/Statistics.js</span>",
@@ -1530,6 +1536,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/math/core/matrix.js~matrix#conv",
+    "class/src/math/core/Matrix.js~Matrix.html#instance-method-conv",
+    "src/math/core/Matrix.js~Matrix#conv",
+    "method"
+  ],
+  [
     "src/math/core/matrix.js~matrix#corrcoef",
     "class/src/math/core/Matrix.js~Matrix.html#instance-method-corrcoef",
     "src/math/core/Matrix.js~Matrix#corrcoef",
@@ -1581,6 +1593,18 @@ window.esdocSearchIndex = [
     "src/math/core/matrix.js~matrix#ctranspose",
     "class/src/math/core/Matrix.js~Matrix.html#instance-method-ctranspose",
     "src/math/core/Matrix.js~Matrix#ctranspose",
+    "method"
+  ],
+  [
+    "src/math/core/matrix.js~matrix#dct",
+    "class/src/math/core/Matrix.js~Matrix.html#instance-method-dct",
+    "src/math/core/Matrix.js~Matrix#dct",
+    "method"
+  ],
+  [
+    "src/math/core/matrix.js~matrix#dct2",
+    "class/src/math/core/Matrix.js~Matrix.html#instance-method-dct2",
+    "src/math/core/Matrix.js~Matrix#dct2",
     "method"
   ],
   [
@@ -1752,6 +1776,24 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/math/core/matrix.js~matrix#fft",
+    "class/src/math/core/Matrix.js~Matrix.html#instance-method-fft",
+    "src/math/core/Matrix.js~Matrix#fft",
+    "method"
+  ],
+  [
+    "src/math/core/matrix.js~matrix#fft2",
+    "class/src/math/core/Matrix.js~Matrix.html#instance-method-fft2",
+    "src/math/core/Matrix.js~Matrix#fft2",
+    "method"
+  ],
+  [
+    "src/math/core/matrix.js~matrix#fftshift",
+    "class/src/math/core/Matrix.js~Matrix.html#instance-method-fftshift",
+    "src/math/core/Matrix.js~Matrix#fftshift",
+    "method"
+  ],
+  [
     "src/math/core/matrix.js~matrix#finv",
     "class/src/math/core/Matrix.js~Matrix.html#instance-method-finv",
     "src/math/core/Matrix.js~Matrix#finv",
@@ -1869,6 +1911,30 @@ window.esdocSearchIndex = [
     "src/math/core/matrix.js~matrix#height",
     "class/src/math/core/Matrix.js~Matrix.html#instance-method-height",
     "src/math/core/Matrix.js~Matrix#height",
+    "method"
+  ],
+  [
+    "src/math/core/matrix.js~matrix#idct",
+    "class/src/math/core/Matrix.js~Matrix.html#instance-method-idct",
+    "src/math/core/Matrix.js~Matrix#idct",
+    "method"
+  ],
+  [
+    "src/math/core/matrix.js~matrix#idct2",
+    "class/src/math/core/Matrix.js~Matrix.html#instance-method-idct2",
+    "src/math/core/Matrix.js~Matrix#idct2",
+    "method"
+  ],
+  [
+    "src/math/core/matrix.js~matrix#ifft",
+    "class/src/math/core/Matrix.js~Matrix.html#instance-method-ifft",
+    "src/math/core/Matrix.js~Matrix#ifft",
+    "method"
+  ],
+  [
+    "src/math/core/matrix.js~matrix#ifft2",
+    "class/src/math/core/Matrix.js~Matrix.html#instance-method-ifft2",
+    "src/math/core/Matrix.js~Matrix#ifft2",
     "method"
   ],
   [
@@ -2328,6 +2394,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/math/core/matrix.js~matrix#powerfft",
+    "class/src/math/core/Matrix.js~Matrix.html#instance-method-powerfft",
+    "src/math/core/Matrix.js~Matrix#powerfft",
+    "method"
+  ],
+  [
     "src/math/core/matrix.js~matrix#prod",
     "class/src/math/core/Matrix.js~Matrix.html#instance-method-prod",
     "src/math/core/Matrix.js~Matrix#prod",
@@ -2730,6 +2802,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/math/core/matrix.js~matrix#xcorr",
+    "class/src/math/core/Matrix.js~Matrix.html#instance-method-xcorr",
+    "src/math/core/Matrix.js~Matrix#xcorr",
+    "method"
+  ],
+  [
     "src/math/core/matrix.js~matrix#xor",
     "class/src/math/core/Matrix.js~Matrix.html#instance-method-xor",
     "src/math/core/Matrix.js~Matrix#xor",
@@ -2760,6 +2838,18 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/math/core/matrix.js~matrix.hamming",
+    "class/src/math/core/Matrix.js~Matrix.html#static-method-hamming",
+    "src/math/core/Matrix.js~Matrix.hamming",
+    "method"
+  ],
+  [
+    "src/math/core/matrix.js~matrix.hann",
+    "class/src/math/core/Matrix.js~Matrix.html#static-method-hann",
+    "src/math/core/Matrix.js~Matrix.hann",
+    "method"
+  ],
+  [
     "src/math/core/matrix.js~matrix.memset",
     "class/src/math/core/Matrix.js~Matrix.html#static-method-memset",
     "src/math/core/Matrix.js~Matrix.memset",
@@ -2787,6 +2877,12 @@ window.esdocSearchIndex = [
     "src/math/core/matrix.js~matrix.valueof",
     "class/src/math/core/Matrix.js~Matrix.html#static-method-valueOf",
     "src/math/core/Matrix.js~Matrix.valueOf",
+    "method"
+  ],
+  [
+    "src/math/core/matrix.js~matrix.window",
+    "class/src/math/core/Matrix.js~Matrix.html#static-method-window",
+    "src/math/core/Matrix.js~Matrix.window",
     "method"
   ],
   [
@@ -3237,6 +3333,108 @@ window.esdocSearchIndex = [
     "src/math/core/tools/random.js~random#setseed",
     "class/src/math/core/tools/Random.js~Random.html#instance-method-setSeed",
     "src/math/core/tools/Random.js~Random#setSeed",
+    "method"
+  ],
+  [
+    "src/math/core/tools/signal.js",
+    "file/src/math/core/tools/Signal.js.html",
+    "src/math/core/tools/Signal.js",
+    "file"
+  ],
+  [
+    "src/math/core/tools/signal.js~ksignalsettings",
+    "typedef/index.html#static-typedef-KSignalSettings",
+    "src/math/core/tools/Signal.js~KSignalSettings",
+    "typedef"
+  ],
+  [
+    "src/math/core/tools/signal.js~signal.conv",
+    "class/src/math/core/tools/Signal.js~Signal.html#static-method-conv",
+    "src/math/core/tools/Signal.js~Signal.conv",
+    "method"
+  ],
+  [
+    "src/math/core/tools/signal.js~signal.dct",
+    "class/src/math/core/tools/Signal.js~Signal.html#static-method-dct",
+    "src/math/core/tools/Signal.js~Signal.dct",
+    "method"
+  ],
+  [
+    "src/math/core/tools/signal.js~signal.dct2",
+    "class/src/math/core/tools/Signal.js~Signal.html#static-method-dct2",
+    "src/math/core/tools/Signal.js~Signal.dct2",
+    "method"
+  ],
+  [
+    "src/math/core/tools/signal.js~signal.fft",
+    "class/src/math/core/tools/Signal.js~Signal.html#static-method-fft",
+    "src/math/core/tools/Signal.js~Signal.fft",
+    "method"
+  ],
+  [
+    "src/math/core/tools/signal.js~signal.fft2",
+    "class/src/math/core/tools/Signal.js~Signal.html#static-method-fft2",
+    "src/math/core/tools/Signal.js~Signal.fft2",
+    "method"
+  ],
+  [
+    "src/math/core/tools/signal.js~signal.fftshift",
+    "class/src/math/core/tools/Signal.js~Signal.html#static-method-fftshift",
+    "src/math/core/tools/Signal.js~Signal.fftshift",
+    "method"
+  ],
+  [
+    "src/math/core/tools/signal.js~signal.hamming",
+    "class/src/math/core/tools/Signal.js~Signal.html#static-method-hamming",
+    "src/math/core/tools/Signal.js~Signal.hamming",
+    "method"
+  ],
+  [
+    "src/math/core/tools/signal.js~signal.hann",
+    "class/src/math/core/tools/Signal.js~Signal.html#static-method-hann",
+    "src/math/core/tools/Signal.js~Signal.hann",
+    "method"
+  ],
+  [
+    "src/math/core/tools/signal.js~signal.idct",
+    "class/src/math/core/tools/Signal.js~Signal.html#static-method-idct",
+    "src/math/core/tools/Signal.js~Signal.idct",
+    "method"
+  ],
+  [
+    "src/math/core/tools/signal.js~signal.idct2",
+    "class/src/math/core/tools/Signal.js~Signal.html#static-method-idct2",
+    "src/math/core/tools/Signal.js~Signal.idct2",
+    "method"
+  ],
+  [
+    "src/math/core/tools/signal.js~signal.ifft",
+    "class/src/math/core/tools/Signal.js~Signal.html#static-method-ifft",
+    "src/math/core/tools/Signal.js~Signal.ifft",
+    "method"
+  ],
+  [
+    "src/math/core/tools/signal.js~signal.ifft2",
+    "class/src/math/core/tools/Signal.js~Signal.html#static-method-ifft2",
+    "src/math/core/tools/Signal.js~Signal.ifft2",
+    "method"
+  ],
+  [
+    "src/math/core/tools/signal.js~signal.powerfft",
+    "class/src/math/core/tools/Signal.js~Signal.html#static-method-powerfft",
+    "src/math/core/tools/Signal.js~Signal.powerfft",
+    "method"
+  ],
+  [
+    "src/math/core/tools/signal.js~signal.window",
+    "class/src/math/core/tools/Signal.js~Signal.html#static-method-window",
+    "src/math/core/tools/Signal.js~Signal.window",
+    "method"
+  ],
+  [
+    "src/math/core/tools/signal.js~signal.xcorr",
+    "class/src/math/core/tools/Signal.js~Signal.html#static-method-xcorr",
+    "src/math/core/tools/Signal.js~Signal.xcorr",
     "method"
   ],
   [

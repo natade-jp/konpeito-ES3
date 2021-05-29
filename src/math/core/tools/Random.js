@@ -8,6 +8,7 @@
  *  The MIT license https://opensource.org/licenses/MIT
  */
 
+import Polyfill from "../../tools/Polyfill.js";
 /**
  * Multiply two 32-bit integers and output a 32-bit integer.
  * @param {number} x1 
